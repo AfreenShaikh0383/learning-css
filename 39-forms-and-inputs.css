@@ -1,0 +1,2 @@
+/* Forms and Inputs */
+*{box-sizing:border-box}body{margin:30px;font-family:Arial,sans-serif;background:#eee}main{max-width:500px;margin:auto;padding:30px;background:white;border:2px solid #333}form{display:grid;gap:10px}label{font-weight:bold}input,select,textarea{width:100%;padding:12px;font:inherit;border:2px solid #333}input:focus,select:focus,textarea:focus{outline:3px solid lightblue}button{padding:12px;font:inherit;cursor:pointer;border:2px solid darkblue;background:white}button:hover{background:lightblue}

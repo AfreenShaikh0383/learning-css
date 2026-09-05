@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>29 - Responsive Design Introduction</title>
+
+    <link rel="stylesheet" href="29-responsive-design-introduction.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>My Website</h1>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>What is Responsive Design?</h2>
+
+        <p>
+          Responsive design means creating webpages that adjust their layout
+          according to the size of the screen.
+        </p>
+
+        <p>The same website can work on desktops, tablets and mobile phones.</p>
+      </section>
+
+      <section>
+        <h2>Why Responsive Design?</h2>
+
+        <ul>
+          <li>Desktop screens have more available space.</li>
+          <li>Mobile screens have less available space.</li>
+          <li>Text should remain readable.</li>
+          <li>Images should fit the screen.</li>
+          <li>Navigation may need to change.</li>
+          <li>Columns may need to become rows.</li>
+        </ul>
+      </section>
+
+      <h2>Responsive Cards</h2>
+
+      <section class="cards">
+        <article class="card">
+          <h3>HTML</h3>
+          <p>Learn webpage structure.</p>
+        </article>
+
+        <article class="card">
+          <h3>CSS</h3>
+          <p>Learn webpage styling.</p>
+        </article>
+
+        <article class="card">
+          <h3>JavaScript</h3>
+          <p>Learn webpage interaction.</p>
+        </article>
+      </section>
+
+      <h2>Responsive Image</h2>
+
+      <div class="image-container">
+        <img
+          src="https://picsum.photos/900/400"
+          alt="Example responsive image"
+        />
+      </div>
+
+      <h2>Important Viewport Setting</h2>
+
+      <pre>
+&lt;meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+&gt;
+        </pre
+      >
+
+      <p>
+        This tells the browser to use the device's actual screen width when
+        displaying the webpage.
+      </p>
+    </main>
+
+    <footer>
+      <p>Responsive Design Practice</p>
+    </footer>
+  </body>
+</html>

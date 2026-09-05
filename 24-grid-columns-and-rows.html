@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>24 - Grid Columns and Rows</title>
+
+    <link rel="stylesheet" href="24-grid-columns-and-rows.css" />
+  </head>
+
+  <body>
+    <h1>24 - Grid Columns and Rows</h1>
+
+    <p>
+      CSS Grid allows us to control the number and size of rows and columns.
+    </p>
+
+    <!-- ==================================================
+         TWO EQUAL COLUMNS
+         ================================================== -->
+
+    <h2>1. Two Equal Columns</h2>
+
+    <div class="grid-two">
+      <div class="box">Column 1</div>
+      <div class="box">Column 2</div>
+    </div>
+
+    <!-- ==================================================
+         THREE EQUAL COLUMNS
+         ================================================== -->
+
+    <h2>2. Three Equal Columns</h2>
+
+    <div class="grid-three">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         DIFFERENT COLUMN SIZES
+         ================================================== -->
+
+    <h2>3. Different Column Sizes</h2>
+
+    <div class="grid-different">
+      <div class="box">Small</div>
+      <div class="box">Medium</div>
+      <div class="box">Large</div>
+    </div>
+
+    <!-- ==================================================
+         REPEAT
+         ================================================== -->
+
+    <h2>4. repeat()</h2>
+
+    <p><code>repeat()</code> makes repeated grid tracks easier to write.</p>
+
+    <div class="grid-repeat">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <!-- ==================================================
+         FR UNIT
+         ================================================== -->
+
+    <h2>5. fr Unit</h2>
+
+    <p>
+      <code>fr</code> represents a fraction of the available space in the grid
+      container.
+    </p>
+
+    <div class="grid-fr">
+      <div class="box">1fr</div>
+      <div class="box">2fr</div>
+      <div class="box">1fr</div>
+    </div>
+
+    <!-- ==================================================
+         GRID ROWS
+         ================================================== -->
+
+    <h2>6. Grid Rows</h2>
+
+    <div class="grid-rows">
+      <div class="box">Row 1</div>
+      <div class="box">Row 2</div>
+      <div class="box">Row 3</div>
+      <div class="box">Row 4</div>
+    </div>
+
+    <!-- ==================================================
+         COLUMN + ROW
+         ================================================== -->
+
+    <h2>7. Columns and Rows Together</h2>
+
+    <div class="grid-both">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL WEBSITE LAYOUT
+         ================================================== -->
+
+    <h2>8. Practical Example - Website Layout</h2>
+
+    <div class="website-layout">
+      <header class="site-header">Header</header>
+
+      <aside class="site-sidebar">Sidebar</aside>
+
+      <main class="site-main">Main Content</main>
+
+      <footer class="site-footer">Footer</footer>
+    </div>
+
+    <!-- ==================================================
+         SYNTAX
+         ================================================== -->
+
+    <h2>9. Important Syntax</h2>
+
+    <pre>
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows: 100px 200px;
+
+    gap: 20px;
+}
+    </pre>
+
+    <!-- ==================================================
+         QUICK REFERENCE
+         ================================================== -->
+
+    <h2>10. Quick Reference</h2>
+
+    <ul>
+      <li>
+        <code>grid-template-columns</code>
+        → controls column sizes
+      </li>
+
+      <li>
+        <code>grid-template-rows</code>
+        → controls row sizes
+      </li>
+
+      <li>
+        <code>1fr</code>
+        → one fraction of available space
+      </li>
+
+      <li>
+        <code>repeat(3, 1fr)</code>
+        → three equal columns
+      </li>
+
+      <li>
+        <code>100px 200px</code>
+        → fixed-size tracks
+      </li>
+    </ul>
+  </body>
+</html>

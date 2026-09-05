@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>27 - Grid Alignment</title>
+
+    <link rel="stylesheet" href="27-grid-alignment.css" />
+  </head>
+
+  <body>
+    <h1>27 - Grid Alignment</h1>
+
+    <p>
+      CSS Grid provides several properties for controlling the position of grid
+      items and the grid itself.
+    </p>
+
+    <!-- ==================================================
+         JUSTIFY ITEMS
+         ================================================== -->
+
+    <h2>1. justify-items: start</h2>
+
+    <div class="grid justify-start">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h2>2. justify-items: center</h2>
+
+    <div class="grid justify-center">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h2>3. justify-items: end</h2>
+
+    <div class="grid justify-end">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         ALIGN ITEMS
+         ================================================== -->
+
+    <h2>4. align-items: start</h2>
+
+    <div class="grid align-start">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h2>5. align-items: center</h2>
+
+    <div class="grid align-center">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h2>6. align-items: end</h2>
+
+    <div class="grid align-end">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         PLACE ITEMS
+         ================================================== -->
+
+    <h2>7. place-items</h2>
+
+    <p><code>place-items</code> can set both align-items and justify-items.</p>
+
+    <div class="grid place-center">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         GRID CONTENT ALIGNMENT
+         ================================================== -->
+
+    <h2>8. justify-content</h2>
+
+    <div class="small-grid justify-content-center">
+      <div class="box">1</div>
+      <div class="box">2</div>
+    </div>
+
+    <h2>9. align-content</h2>
+
+    <div class="small-grid align-content-center">
+      <div class="box">1</div>
+      <div class="box">2</div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL EXAMPLE
+         ================================================== -->
+
+    <h2>10. Practical Example - Centered Login Card</h2>
+
+    <div class="login-container">
+      <div class="login-card">
+        <h2>Login</h2>
+
+        <label>Email</label>
+        <input type="email" />
+
+        <label>Password</label>
+        <input type="password" />
+
+        <button>Login</button>
+      </div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL PRODUCT GRID
+         ================================================== -->
+
+    <h2>11. Practical Example - Product Grid</h2>
+
+    <div class="products">
+      <div class="product">
+        <h3>Laptop</h3>
+        <p>₹50,000</p>
+        <button>Buy</button>
+      </div>
+
+      <div class="product">
+        <h3>Keyboard</h3>
+        <p>₹2,000</p>
+        <button>Buy</button>
+      </div>
+
+      <div class="product">
+        <h3>Mouse</h3>
+        <p>₹1,000</p>
+        <button>Buy</button>
+      </div>
+    </div>
+
+    <!-- ==================================================
+         QUICK REFERENCE
+         ================================================== -->
+
+    <h2>12. Quick Reference</h2>
+
+    <ul>
+      <li>
+        <code>justify-items</code>
+        → horizontal alignment of items inside their grid areas
+      </li>
+
+      <li>
+        <code>align-items</code>
+        → vertical alignment of items inside their grid areas
+      </li>
+
+      <li>
+        <code>place-items</code>
+        → shorthand for both
+      </li>
+
+      <li>
+        <code>justify-content</code>
+        → horizontal alignment of the entire grid
+      </li>
+
+      <li>
+        <code>align-content</code>
+        → vertical alignment of the entire grid
+      </li>
+
+      <li>
+        <code>place-content</code>
+        → shorthand for both
+      </li>
+    </ul>
+
+    <h2>13. Example Syntax</h2>
+
+    <pre>
+.container {
+    display: grid;
+
+    justify-items: center;
+    align-items: center;
+
+    /* Shorthand */
+    place-items: center;
+}
+    </pre>
+  </body>
+</html>

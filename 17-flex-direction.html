@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>17 - Flex Direction</title>
+
+    <link rel="stylesheet" href="17-flex-direction.css" />
+  </head>
+
+  <body>
+    <h1>17 - Flex Direction</h1>
+
+    <p>
+      The <code>flex-direction</code> property controls the direction in which
+      flex items are placed.
+    </p>
+
+    <!-- ==================================================
+         ROW
+         ================================================== -->
+
+    <h2>1. flex-direction: row</h2>
+
+    <p>This is the default direction. Items are placed from left to right.</p>
+
+    <div class="container row">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         ROW REVERSE
+         ================================================== -->
+
+    <h2>2. flex-direction: row-reverse</h2>
+
+    <p>Items are placed from right to left.</p>
+
+    <div class="container row-reverse">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         COLUMN
+         ================================================== -->
+
+    <h2>3. flex-direction: column</h2>
+
+    <p>Items are placed from top to bottom.</p>
+
+    <div class="container column">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         COLUMN REVERSE
+         ================================================== -->
+
+    <h2>4. flex-direction: column-reverse</h2>
+
+    <p>Items are placed from bottom to top.</p>
+
+    <div class="container column-reverse">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL NAVIGATION
+         ================================================== -->
+
+    <h2>5. Practical Example - Navigation</h2>
+
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- ==================================================
+         PRACTICAL SIDEBAR
+         ================================================== -->
+
+    <h2>6. Practical Example - Sidebar</h2>
+
+    <div class="sidebar">
+      <a href="#">Dashboard</a>
+      <a href="#">Profile</a>
+      <a href="#">Courses</a>
+      <a href="#">Settings</a>
+    </div>
+
+    <!-- ==================================================
+         SYNTAX
+         ================================================== -->
+
+    <h2>7. Syntax</h2>
+
+    <pre>
+.container {
+    display: flex;
+    flex-direction: row;
+}
+    </pre>
+
+    <h2>8. Possible Values</h2>
+
+    <ul>
+      <li><code>row</code></li>
+      <li><code>row-reverse</code></li>
+      <li><code>column</code></li>
+      <li><code>column-reverse</code></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+/* CSS Units */
+body{margin:30px;font-family:Arial,sans-serif}.px{width:300px;padding:30px;background:lightblue;border:2px solid blue}.percent-parent{width:600px;max-width:100%;padding:20px;border:2px solid #333}.percent{width:50%;padding:20px;background:lightgreen}.viewport{width:50vw;height:20vh;display:grid;place-items:center;background:lightyellow;border:2px solid orange}

@@ -1,0 +1,149 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================== WIDTH ==================== */
+
+.width-example {
+  width: 300px;
+
+  padding: 20px;
+
+  background-color: lightblue;
+}
+
+/* ==================== HEIGHT ==================== */
+
+.height-example {
+  height: 150px;
+
+  padding: 20px;
+
+  background-color: lightgreen;
+}
+
+/* ==================== WIDTH + HEIGHT ==================== */
+
+.size-example {
+  width: 300px;
+
+  height: 150px;
+
+  padding: 20px;
+
+  border: 2px solid black;
+
+  background-color: lightyellow;
+}
+
+/* ==================== PERCENTAGE WIDTH ==================== */
+
+.parent {
+  width: 600px;
+
+  padding: 20px;
+
+  border: 2px solid black;
+}
+
+.percentage-width {
+  width: 50%;
+
+  padding: 20px;
+
+  background-color: lightblue;
+}
+
+/* ==================== MAX WIDTH ==================== */
+
+.max-width-example {
+  width: 800px;
+
+  max-width: 500px;
+
+  padding: 20px;
+
+  background-color: lightgreen;
+}
+
+/* ==================== MIN WIDTH ==================== */
+
+.min-width-example {
+  width: 100px;
+
+  min-width: 300px;
+
+  padding: 20px;
+
+  background-color: lightpink;
+}
+
+/* ==================== MAX HEIGHT ==================== */
+
+.max-height-example {
+  height: 300px;
+
+  max-height: 150px;
+
+  padding: 20px;
+
+  overflow: auto;
+
+  background-color: lightyellow;
+}
+
+/* ==================== MIN HEIGHT ==================== */
+
+.min-height-example {
+  min-height: 150px;
+
+  padding: 20px;
+
+  background-color: lightblue;
+}
+
+/* ==================== AUTO ==================== */
+
+.auto-example {
+  width: auto;
+
+  height: auto;
+
+  padding: 20px;
+
+  background-color: #eeeeee;
+}
+
+/* ==================== PRACTICAL CARD ==================== */
+
+.course-card {
+  width: 400px;
+
+  max-width: 100%;
+
+  min-height: 200px;
+
+  padding: 25px;
+
+  border: 2px solid #333333;
+
+  background-color: #f4f4f4;
+
+  box-sizing: border-box;
+}
+
+.course-card h2 {
+  color: darkblue;
+}
+
+.course-card button {
+  padding: 10px 20px;
+
+  border: none;
+
+  cursor: pointer;
+}

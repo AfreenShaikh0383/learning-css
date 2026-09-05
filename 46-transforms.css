@@ -1,0 +1,2 @@
+/* CSS Transforms */
+body{margin:30px;font-family:Arial,sans-serif}.examples{display:flex;flex-wrap:wrap;gap:40px;padding:40px}.examples div{width:150px;padding:40px 20px;text-align:center;border:2px solid #333;background:lightblue;transition:transform .4s}.translate:hover{transform:translate(15px,-10px)}.scale:hover{transform:scale(1.15)}.rotate:hover{transform:rotate(5deg)}.combined:hover{transform:translateY(-10px) scale(1.05) rotate(2deg)}

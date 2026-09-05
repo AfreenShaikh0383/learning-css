@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>21 - Flex Grow Shrink Basis</title>
+
+    <link rel="stylesheet" href="21-flex-grow-shrink-basis.css" />
+  </head>
+
+  <body>
+    <h1>21 - Flex Grow, Shrink & Basis</h1>
+
+    <p>
+      Flexbox provides properties that control how flex items grow, shrink, and
+      determine their initial size.
+    </p>
+
+    <!-- ==================================================
+         FLEX GROW
+         ================================================== -->
+
+    <h2>1. flex-grow</h2>
+
+    <p>
+      <code>flex-grow</code> determines how much an item can grow when extra
+      space is available.
+    </p>
+
+    <div class="grow-container">
+      <div class="grow-box grow-one">Grow 1</div>
+
+      <div class="grow-box grow-two">Grow 2</div>
+
+      <div class="grow-box grow-one">Grow 1</div>
+    </div>
+
+    <!-- ==================================================
+         FLEX GROW DIFFERENT VALUES
+         ================================================== -->
+
+    <h2>2. Different flex-grow Values</h2>
+
+    <div class="grow-container">
+      <div class="grow-box grow-1">grow: 1</div>
+
+      <div class="grow-box grow-2">grow: 2</div>
+
+      <div class="grow-box grow-3">grow: 3</div>
+    </div>
+
+    <!-- ==================================================
+         FLEX SHRINK
+         ================================================== -->
+
+    <h2>3. flex-shrink</h2>
+
+    <p>
+      <code>flex-shrink</code> determines how much an item can shrink when there
+      is not enough space.
+    </p>
+
+    <div class="shrink-container">
+      <div class="shrink-box no-shrink">shrink: 0</div>
+
+      <div class="shrink-box shrink-one">shrink: 1</div>
+
+      <div class="shrink-box shrink-one">shrink: 1</div>
+    </div>
+
+    <!-- ==================================================
+         FLEX BASIS
+         ================================================== -->
+
+    <h2>4. flex-basis</h2>
+
+    <p>
+      <code>flex-basis</code> sets the initial size of a flex item before extra
+      space is distributed.
+    </p>
+
+    <div class="basis-container">
+      <div class="basis-box basis-100">100px</div>
+
+      <div class="basis-box basis-200">200px</div>
+
+      <div class="basis-box basis-300">300px</div>
+    </div>
+
+    <!-- ==================================================
+         FLEX SHORTHAND
+         ================================================== -->
+
+    <h2>5. flex Shorthand</h2>
+
+    <p>The <code>flex</code> shorthand can combine:</p>
+
+    <ul>
+      <li>flex-grow</li>
+      <li>flex-shrink</li>
+      <li>flex-basis</li>
+    </ul>
+
+    <div class="shorthand-container">
+      <div class="short-box flex-one">flex: 1</div>
+
+      <div class="short-box flex-two">flex: 2</div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL EXAMPLE
+         ================================================== -->
+
+    <h2>6. Practical Example - Dashboard Cards</h2>
+
+    <div class="dashboard">
+      <div class="dashboard-card">
+        <h3>Users</h3>
+        <p>1,250</p>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Orders</h3>
+        <p>850</p>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Revenue</h3>
+        <p>₹75,000</p>
+      </div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL LAYOUT
+         ================================================== -->
+
+    <h2>7. Practical Example - Sidebar + Content</h2>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h3>Sidebar</h3>
+        <p>Navigation</p>
+      </aside>
+
+      <main class="main-content">
+        <h3>Main Content</h3>
+        <p>This section takes the remaining available space.</p>
+      </main>
+    </div>
+
+    <!-- ==================================================
+         SYNTAX
+         ================================================== -->
+
+    <h2>8. Syntax</h2>
+
+    <pre>
+.item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+    </pre>
+
+    <h2>9. Shorthand Syntax</h2>
+
+    <pre>
+.item {
+    flex: 1 1 200px;
+}
+    </pre>
+
+    <h2>10. Important Properties</h2>
+
+    <ul>
+      <li>
+        <strong>flex-grow:</strong>
+        Controls growth when extra space exists.
+      </li>
+
+      <li>
+        <strong>flex-shrink:</strong>
+        Controls shrinking when space is insufficient.
+      </li>
+
+      <li>
+        <strong>flex-basis:</strong>
+        Sets the initial size of the item.
+      </li>
+
+      <li>
+        <strong>flex:</strong>
+        Shorthand for grow, shrink and basis.
+      </li>
+    </ul>
+  </body>
+</html>

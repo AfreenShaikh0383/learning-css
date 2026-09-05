@@ -1,0 +1,58 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================== HEADINGS ==================== */
+
+h1 {
+  color: darkblue;
+}
+
+h2 {
+  color: darkgreen;
+}
+
+/* ==================== EXTERNAL CSS EXAMPLE ==================== */
+
+.external-example {
+  color: purple;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ==================== CODE EXAMPLES ==================== */
+
+pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+/* ==================== PROFILE CARD ==================== */
+
+.profile-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #eeeeee;
+  border: 2px solid #333333;
+}
+
+.profile-card h3 {
+  color: darkblue;
+}
+
+.profile-card p {
+  color: #555555;
+}
+
+/* ==================== BUTTON ==================== */
+
+.profile-card button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}

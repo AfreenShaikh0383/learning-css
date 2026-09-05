@@ -1,0 +1,123 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================== TEXT COLOR ==================== */
+
+.text-color {
+  color: purple;
+}
+
+/* ==================== TEXT ALIGNMENT ==================== */
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* ==================== TEXT DECORATION ==================== */
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+/* ==================== TEXT TRANSFORMATION ==================== */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* ==================== TEXT INDENT ==================== */
+
+.indent {
+  text-indent: 50px;
+}
+
+/* ==================== LETTER SPACING ==================== */
+
+.letter-spacing {
+  letter-spacing: 5px;
+}
+
+/* ==================== WORD SPACING ==================== */
+
+.word-spacing {
+  word-spacing: 15px;
+}
+
+/* ==================== LINE HEIGHT ==================== */
+
+.line-height {
+  line-height: 2;
+}
+
+/* ==================== TEXT SHADOW ==================== */
+
+.shadow {
+  font-size: 30px;
+
+  /* horizontal offset, vertical offset, blur, color */
+  text-shadow: 3px 3px 5px gray;
+}
+
+/* ==================== WHITE SPACE ==================== */
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* ==================== PRACTICAL ARTICLE CARD ==================== */
+
+.article-card {
+  width: 500px;
+  padding: 25px;
+  border: 2px solid #333333;
+  background-color: #f4f4f4;
+}
+
+.article-card h2 {
+  text-align: center;
+  color: darkblue;
+}
+
+.article-intro {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.article-card a {
+  text-decoration: none;
+  color: blue;
+}

@@ -1,0 +1,133 @@
+/* ==================================================
+   BASIC PAGE
+   ================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   BASIC GRID
+   ================================================== */
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 15px;
+
+  padding: 20px;
+
+  border: 2px solid black;
+}
+
+/* ==================================================
+   TWO COLUMN GRID
+   ================================================== */
+
+.two-column-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+
+  padding: 20px;
+
+  border: 2px solid black;
+}
+
+/* ==================================================
+   THREE COLUMN GRID
+   ================================================== */
+
+.three-column-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 15px;
+
+  padding: 20px;
+
+  border: 2px solid black;
+}
+
+/* ==================================================
+   GRID ITEMS
+   ================================================== */
+
+.box {
+  padding: 30px;
+
+  text-align: center;
+
+  border: 2px solid blue;
+  background-color: lightblue;
+}
+
+/* ==================================================
+   GAP EXAMPLE
+   ================================================== */
+
+.gap-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+
+  padding: 20px;
+
+  border: 2px solid black;
+}
+
+/* ==================================================
+   DASHBOARD
+   ================================================== */
+
+.dashboard {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+
+  max-width: 700px;
+}
+
+.dashboard-card {
+  padding: 25px;
+
+  border: 2px solid #333333;
+  background-color: #f4f4f4;
+}
+
+.dashboard-card h3 {
+  margin-top: 0;
+  color: darkblue;
+}
+
+.dashboard-card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ==================================================
+   CODE
+   ================================================== */
+
+pre {
+  padding: 15px;
+
+  background-color: #f4f4f4;
+
+  overflow-x: auto;
+}

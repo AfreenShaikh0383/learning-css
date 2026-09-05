@@ -1,0 +1,2 @@
+/* vw and vh */
+body{margin:0;font-family:Arial,sans-serif}.hero{min-height:50vh;display:grid;place-items:center;align-content:center;text-align:center;background:lightblue;padding:5vh 5vw}.hero h1{font-size:6vw}.panel{width:70vw;max-width:700px;height:20vh;display:grid;place-items:center;margin:40px auto;background:lightyellow;border:2px solid orange}

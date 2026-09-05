@@ -1,0 +1,138 @@
+/* ==================================================
+   BASIC PAGE
+   ================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   COMMON BOX
+   ================================================== */
+
+.box {
+  padding: 25px;
+
+  text-align: center;
+
+  border: 2px solid blue;
+  background-color: lightblue;
+}
+
+/* ==================================================
+   BASIC GAP
+   ================================================== */
+
+.basic-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+/* ==================================================
+   ROW GAP
+   ================================================== */
+
+.row-gap-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  row-gap: 40px;
+}
+
+/* ==================================================
+   COLUMN GAP
+   ================================================== */
+
+.column-gap-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 50px;
+}
+
+/* ==================================================
+   DIFFERENT ROW + COLUMN GAP
+   ================================================== */
+
+.different-gap-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  row-gap: 40px;
+  column-gap: 20px;
+}
+
+/* ==================================================
+   COURSE GRID
+   ================================================== */
+
+.course-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  max-width: 900px;
+}
+
+.course-card {
+  padding: 25px;
+
+  border: 2px solid #333333;
+  background-color: #f4f4f4;
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: darkblue;
+}
+
+/* ==================================================
+   GALLERY
+   ================================================== */
+
+.gallery {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  max-width: 700px;
+}
+
+.gallery-item {
+  min-height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #333333;
+  background-color: lightyellow;
+}
+
+/* ==================================================
+   CODE
+   ================================================== */
+
+pre {
+  padding: 15px;
+
+  background-color: #f4f4f4;
+
+  overflow-x: auto;
+}

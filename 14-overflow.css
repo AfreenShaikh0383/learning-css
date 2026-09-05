@@ -1,0 +1,137 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 30px;
+
+  line-height: 1.6;
+}
+
+/* ==================== VISIBLE ==================== */
+
+.visible {
+  width: 300px;
+
+  height: 80px;
+
+  padding: 20px;
+
+  border: 2px solid blue;
+
+  background-color: lightblue;
+
+  overflow: visible;
+}
+
+/* ==================== HIDDEN ==================== */
+
+.hidden {
+  width: 300px;
+
+  height: 80px;
+
+  padding: 20px;
+
+  border: 2px solid red;
+
+  background-color: lightpink;
+
+  overflow: hidden;
+}
+
+/* ==================== SCROLL ==================== */
+
+.scroll {
+  width: 300px;
+
+  height: 100px;
+
+  padding: 20px;
+
+  border: 2px solid green;
+
+  background-color: lightgreen;
+
+  overflow: scroll;
+}
+
+/* ==================== AUTO ==================== */
+
+.auto {
+  width: 300px;
+
+  height: 100px;
+
+  padding: 20px;
+
+  border: 2px solid orange;
+
+  background-color: lightyellow;
+
+  overflow: auto;
+}
+
+/* ==================== OVERFLOW-X ==================== */
+
+.overflow-x {
+  width: 300px;
+
+  padding: 20px;
+
+  border: 2px solid purple;
+
+  background-color: #eeeeee;
+
+  /*
+        Controls horizontal overflow.
+    */
+  overflow-x: auto;
+
+  white-space: nowrap;
+}
+
+/* ==================== OVERFLOW-Y ==================== */
+
+.overflow-y {
+  width: 300px;
+
+  height: 100px;
+
+  padding: 20px;
+
+  border: 2px solid darkblue;
+
+  background-color: #eeeeee;
+
+  /*
+        Controls vertical overflow.
+    */
+  overflow-y: auto;
+}
+
+/* ==================== CODE BOX ==================== */
+
+.code-box {
+  width: 500px;
+
+  max-width: 100%;
+
+  padding: 20px;
+
+  border: 2px solid #333333;
+
+  background-color: #f4f4f4;
+
+  box-sizing: border-box;
+
+  overflow: auto;
+}
+
+.code-box pre {
+  padding: 15px;
+
+  background-color: white;
+
+  overflow-x: auto;
+}

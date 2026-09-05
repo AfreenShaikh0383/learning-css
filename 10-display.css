@@ -1,0 +1,113 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 30px;
+
+  line-height: 1.6;
+}
+
+/* ==================== BLOCK ==================== */
+
+.block {
+  display: block;
+
+  width: 200px;
+
+  padding: 15px;
+
+  margin: 10px 0;
+
+  background-color: lightblue;
+
+  border: 2px solid blue;
+}
+
+/* ==================== INLINE ==================== */
+
+.inline {
+  display: inline;
+
+  padding: 10px;
+
+  background-color: lightgreen;
+
+  border: 2px solid green;
+}
+
+/* ==================== INLINE-BLOCK ==================== */
+
+.inline-block {
+  display: inline-block;
+
+  width: 150px;
+
+  padding: 20px;
+
+  margin: 5px;
+
+  background-color: lightyellow;
+
+  border: 2px solid orange;
+}
+
+/* ==================== DISPLAY NONE ==================== */
+
+.visible-box {
+  padding: 20px;
+
+  background-color: lightgreen;
+}
+
+.hidden-box {
+  display: none;
+
+  padding: 20px;
+
+  background-color: red;
+}
+
+/* ==================== NAVIGATION ==================== */
+
+.navbar {
+  padding: 15px;
+
+  background-color: #333333;
+}
+
+.navbar a {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  color: white;
+
+  text-decoration: none;
+}
+
+/* ==================== CARDS ==================== */
+
+.card {
+  display: inline-block;
+
+  vertical-align: top;
+
+  width: 200px;
+
+  min-height: 150px;
+
+  padding: 20px;
+
+  margin: 10px;
+
+  border: 2px solid #333333;
+
+  background-color: #f4f4f4;
+
+  box-sizing: border-box;
+}
+
+.card h3 {
+  color: darkblue;
+}

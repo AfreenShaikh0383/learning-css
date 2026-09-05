@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>26 - Grid Areas</title>
+
+    <link rel="stylesheet" href="26-grid-areas.css" />
+  </head>
+
+  <body>
+    <h1>26 - Grid Areas</h1>
+
+    <p>
+      Grid areas allow us to give names to different sections of a grid layout.
+    </p>
+
+    <!-- ==================================================
+         BASIC GRID AREAS
+         ================================================== -->
+
+    <h2>1. Basic Grid Areas</h2>
+
+    <div class="basic-layout">
+      <header class="header">Header</header>
+
+      <aside class="sidebar">Sidebar</aside>
+
+      <main class="main">Main Content</main>
+
+      <footer class="footer">Footer</footer>
+    </div>
+
+    <!-- ==================================================
+         GRID AREA SYNTAX
+         ================================================== -->
+
+    <h2>2. Grid Area Syntax</h2>
+
+    <pre>
+.container {
+    display: grid;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+    </pre>
+
+    <!-- ==================================================
+         WEBSITE LAYOUT
+         ================================================== -->
+
+    <h2>3. Practical Example - Website</h2>
+
+    <div class="website">
+      <header class="site-header">
+        <h2>CodeLearn</h2>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Courses</a>
+          <a href="#">Projects</a>
+        </nav>
+      </header>
+
+      <aside class="site-sidebar">
+        <h3>Courses</h3>
+
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+        <a href="#">React</a>
+      </aside>
+
+      <main class="site-main">
+        <h1>Learn Web Development</h1>
+
+        <p>Build websites and applications using modern web technologies.</p>
+
+        <div class="mini-cards">
+          <div>HTML</div>
+          <div>CSS</div>
+          <div>JavaScript</div>
+        </div>
+      </main>
+
+      <footer class="site-footer">&copy; 2026 CodeLearn</footer>
+    </div>
+
+    <!-- ==================================================
+         DASHBOARD
+         ================================================== -->
+
+    <h2>4. Practical Example - Dashboard</h2>
+
+    <div class="dashboard">
+      <header class="dashboard-header">Dashboard</header>
+
+      <aside class="dashboard-sidebar">Menu</aside>
+
+      <main class="dashboard-main">
+        <h2>Overview</h2>
+
+        <div class="stats">
+          <div>Users: 1250</div>
+          <div>Orders: 850</div>
+          <div>Revenue: ₹75,000</div>
+        </div>
+      </main>
+
+      <footer class="dashboard-footer">Dashboard Footer</footer>
+    </div>
+
+    <!-- ==================================================
+         IMPORTANT RULES
+         ================================================== -->
+
+    <h2>5. Important Rules</h2>
+
+    <ul>
+      <li>
+        <code>grid-template-areas</code>
+        defines named areas.
+      </li>
+
+      <li>
+        <code>grid-area</code>
+        assigns an element to a named area.
+      </li>
+
+      <li>Names are written inside quotes.</li>
+
+      <li>Each row is written as a separate string.</li>
+    </ul>
+  </body>
+</html>

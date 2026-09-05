@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Z-Index</title>
+
+    <link rel="stylesheet" href="15-z-index.css" />
+  </head>
+
+  <body>
+    <h1>CSS Z-Index</h1>
+
+    <p>
+      The z-index property controls the stacking order of overlapping elements.
+    </p>
+
+    <!-- ==================== BASIC Z-INDEX ==================== -->
+
+    <h2>1. Basic Z-Index</h2>
+
+    <div class="stack-container">
+      <div class="box-one">z-index: 1</div>
+
+      <div class="box-two">z-index: 2</div>
+
+      <div class="box-three">z-index: 3</div>
+    </div>
+
+    <!-- ==================== HIGHER Z-INDEX ==================== -->
+
+    <h2>2. Higher Z-Index</h2>
+
+    <div class="layer-container">
+      <div class="layer-one">z-index: 1</div>
+
+      <div class="layer-ten">z-index: 10</div>
+    </div>
+
+    <!-- ==================== NEGATIVE Z-INDEX ==================== -->
+
+    <h2>3. Negative Z-Index</h2>
+
+    <div class="negative-container">
+      <div class="background-layer">z-index: -1</div>
+
+      <div class="content-layer">Main Content</div>
+    </div>
+
+    <!-- ==================== PRACTICAL EXAMPLE ==================== -->
+
+    <h2>4. Practical Example</h2>
+
+    <div class="card">
+      <div class="badge">NEW</div>
+
+      <h2>CSS Course</h2>
+
+      <p>Learn CSS from basics to advanced layouts.</p>
+
+      <button>Learn More</button>
+    </div>
+  </body>
+</html>

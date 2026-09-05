@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Syntax & Selectors</title>
+
+    <link rel="stylesheet" href="02-css-syntax-and-selectors.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="main-heading">CSS Syntax & Selectors</h1>
+
+      <p>Selectors tell CSS which HTML elements should be styled.</p>
+    </header>
+
+    <hr />
+
+    <main>
+      <!-- ==================== CSS SYNTAX ==================== -->
+      <section>
+        <h2>CSS Syntax</h2>
+
+        <pre>
+selector {
+    property: value;
+}
+            </pre
+        >
+
+        <p>Example:</p>
+
+        <pre>
+p {
+    color: blue;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== ELEMENT SELECTOR ==================== -->
+      <section>
+        <h2>1. Element Selector</h2>
+
+        <p>
+          This paragraph is selected using the
+          <strong>element selector</strong>.
+        </p>
+
+        <p>Example:</p>
+
+        <pre>
+p {
+    color: blue;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== CLASS SELECTOR ==================== -->
+      <section>
+        <h2>2. Class Selector</h2>
+
+        <p class="highlight">This paragraph has a class.</p>
+
+        <p class="highlight">Multiple elements can use the same class.</p>
+
+        <pre>
+.highlight {
+    background-color: yellow;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== ID SELECTOR ==================== -->
+      <section>
+        <h2>3. ID Selector</h2>
+
+        <p id="special-text">This paragraph has a unique ID.</p>
+
+        <pre>
+#special-text {
+    color: red;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== UNIVERSAL SELECTOR ==================== -->
+      <section>
+        <h2>4. Universal Selector</h2>
+
+        <p>The universal selector targets all elements.</p>
+
+        <pre>
+* {
+    margin: 0;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== GROUP SELECTOR ==================== -->
+      <section>
+        <h2>5. Group Selector</h2>
+
+        <h3 class="group-example">Heading Example</h3>
+
+        <p class="group-example">Paragraph Example</p>
+
+        <pre>
+h1, h2, p {
+    color: green;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== DESCENDANT SELECTOR ==================== -->
+      <section>
+        <h2>6. Descendant Selector</h2>
+
+        <div class="container">
+          <p>This paragraph is inside the container.</p>
+
+          <div>
+            <p>This paragraph is nested inside another div.</p>
+          </div>
+        </div>
+
+        <pre>
+.container p {
+    color: purple;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== CHILD SELECTOR ==================== -->
+      <section>
+        <h2>7. Child Selector</h2>
+
+        <div class="parent">
+          <p>Direct child paragraph</p>
+
+          <div>
+            <p>Nested paragraph</p>
+          </div>
+        </div>
+
+        <pre>
+.parent > p {
+    color: orange;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== ATTRIBUTE SELECTOR ==================== -->
+      <section>
+        <h2>8. Attribute Selector</h2>
+
+        <input type="text" placeholder="Text input" />
+
+        <input type="email" placeholder="Email input" />
+
+        <pre>
+input[type="text"] {
+    border: 2px solid blue;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== MULTIPLE CLASSES ==================== -->
+      <section>
+        <h2>9. Multiple Classes</h2>
+
+        <p class="text large">This element has two classes.</p>
+
+        <pre>
+.text.large {
+    font-size: 24px;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== PRACTICAL EXAMPLE ==================== -->
+      <section>
+        <h2>Practical Example</h2>
+
+        <div class="student-card">
+          <h3>Student Profile</h3>
+
+          <p class="name">Name: Afreen</p>
+
+          <p>Course: MCA</p>
+
+          <p>Learning: HTML, CSS & JavaScript</p>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>End of CSS Syntax & Selectors</p>
+    </footer>
+  </body>
+</html>

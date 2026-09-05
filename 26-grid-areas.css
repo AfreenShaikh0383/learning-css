@@ -1,0 +1,329 @@
+/* ==================================================
+   BASIC PAGE
+   ================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   BASIC GRID AREAS
+   ================================================== */
+
+.basic-layout {
+  display: grid;
+
+  grid-template-columns: 200px 1fr;
+
+  grid-template-rows: 100px 250px 80px;
+
+  gap: 10px;
+
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+
+  max-width: 800px;
+}
+
+/* ==================================================
+   BASIC HEADER
+   ================================================== */
+
+.header {
+  grid-area: header;
+
+  padding: 30px;
+
+  text-align: center;
+
+  background-color: lightblue;
+  border: 2px solid blue;
+}
+
+/* ==================================================
+   BASIC SIDEBAR
+   ================================================== */
+
+.sidebar {
+  grid-area: sidebar;
+
+  padding: 30px;
+
+  background-color: lightyellow;
+  border: 2px solid orange;
+}
+
+/* ==================================================
+   BASIC MAIN
+   ================================================== */
+
+.main {
+  grid-area: main;
+
+  padding: 30px;
+
+  background-color: lightgreen;
+  border: 2px solid green;
+}
+
+/* ==================================================
+   BASIC FOOTER
+   ================================================== */
+
+.footer {
+  grid-area: footer;
+
+  padding: 25px;
+
+  text-align: center;
+
+  background-color: #eeeeee;
+  border: 2px solid #333333;
+}
+
+/* ==================================================
+   WEBSITE
+   ================================================== */
+
+.website {
+  display: grid;
+
+  grid-template-columns: 200px 1fr;
+
+  grid-template-rows: 100px 350px 70px;
+
+  gap: 10px;
+
+  grid-template-areas:
+    "site-header site-header"
+    "site-sidebar site-main"
+    "site-footer site-footer";
+
+  max-width: 900px;
+}
+
+/* ==================================================
+   WEBSITE HEADER
+   ================================================== */
+
+.site-header {
+  grid-area: site-header;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 30px;
+
+  background-color: #333333;
+  color: white;
+}
+
+.site-header h2 {
+  margin: 0;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.site-header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ==================================================
+   WEBSITE SIDEBAR
+   ================================================== */
+
+.site-sidebar {
+  grid-area: site-sidebar;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  padding: 20px;
+
+  background-color: #eeeeee;
+}
+
+.site-sidebar a {
+  padding: 8px;
+
+  color: black;
+  text-decoration: none;
+
+  background-color: white;
+  border: 1px solid #cccccc;
+}
+
+/* ==================================================
+   WEBSITE MAIN
+   ================================================== */
+
+.site-main {
+  grid-area: site-main;
+
+  padding: 30px;
+
+  background-color: #f4f4f4;
+}
+
+.site-main h1 {
+  color: darkblue;
+}
+
+/* ==================================================
+   MINI CARDS
+   ================================================== */
+
+.mini-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.mini-cards div {
+  padding: 25px;
+
+  text-align: center;
+
+  border: 2px solid #333333;
+  background-color: white;
+}
+
+/* ==================================================
+   WEBSITE FOOTER
+   ================================================== */
+
+.site-footer {
+  grid-area: site-footer;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: #333333;
+  color: white;
+}
+
+/* ==================================================
+   DASHBOARD
+   ================================================== */
+
+.dashboard {
+  display: grid;
+
+  grid-template-columns: 200px 1fr;
+
+  grid-template-rows: 80px 300px 70px;
+
+  gap: 10px;
+
+  grid-template-areas:
+    "dashboard-header dashboard-header"
+    "dashboard-sidebar dashboard-main"
+    "dashboard-footer dashboard-footer";
+
+  max-width: 900px;
+}
+
+/* ==================================================
+   DASHBOARD HEADER
+   ================================================== */
+
+.dashboard-header {
+  grid-area: dashboard-header;
+
+  padding: 25px;
+
+  background-color: lightblue;
+  border: 2px solid blue;
+}
+
+/* ==================================================
+   DASHBOARD SIDEBAR
+   ================================================== */
+
+.dashboard-sidebar {
+  grid-area: dashboard-sidebar;
+
+  padding: 25px;
+
+  background-color: lightyellow;
+  border: 2px solid orange;
+}
+
+/* ==================================================
+   DASHBOARD MAIN
+   ================================================== */
+
+.dashboard-main {
+  grid-area: dashboard-main;
+
+  padding: 25px;
+
+  background-color: #f4f4f4;
+  border: 2px solid #333333;
+}
+
+/* ==================================================
+   STATS
+   ================================================== */
+
+.stats {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.stats div {
+  padding: 20px;
+
+  border: 2px solid green;
+  background-color: lightgreen;
+}
+
+/* ==================================================
+   DASHBOARD FOOTER
+   ================================================== */
+
+.dashboard-footer {
+  grid-area: dashboard-footer;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: #eeeeee;
+  border: 2px solid #333333;
+}
+
+/* ==================================================
+   CODE
+   ================================================== */
+
+pre {
+  padding: 15px;
+
+  background-color: #f4f4f4;
+
+  overflow-x: auto;
+}

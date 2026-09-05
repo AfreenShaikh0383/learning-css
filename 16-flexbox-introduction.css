@@ -1,0 +1,125 @@
+/* ==================================================
+   BASIC PAGE
+   ================================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   BASIC FLEX CONTAINER
+   ================================================== */
+
+.flex-container {
+  display: flex;
+  border: 2px solid black;
+  padding: 20px;
+  gap: 15px;
+}
+
+/* ==================================================
+   FLEX ITEMS
+   ================================================== */
+
+.box {
+  width: 120px;
+  padding: 25px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ==================================================
+   NORMAL BLOCK ELEMENTS
+   ================================================== */
+
+.normal-container {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.normal-box {
+  width: 120px;
+  padding: 25px;
+  margin-bottom: 10px;
+  background-color: lightgreen;
+  border: 2px solid green;
+  text-align: center;
+}
+
+/* ==================================================
+   SECOND FLEX EXAMPLE
+   ================================================== */
+
+.second {
+  background-color: #eeeeee;
+}
+
+/* ==================================================
+   GAP
+   ================================================== */
+
+.gap-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  border: 2px solid purple;
+}
+
+/* ==================================================
+   FLEX ITEMS EXAMPLE
+   ================================================== */
+
+.item-container {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.item {
+  padding: 20px;
+  background-color: lightyellow;
+  border: 2px solid orange;
+}
+
+/* ==================================================
+   PRACTICAL COURSE CARDS
+   ================================================== */
+
+.courses {
+  display: flex;
+  gap: 20px;
+}
+
+.course-card {
+  flex: 1;
+  padding: 25px;
+  border: 2px solid #333333;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+.course-card h3 {
+  color: darkblue;
+}
+
+.course-card button {
+  padding: 10px 20px;
+  border: 2px solid darkblue;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* ==================================================
+   CODE
+   ================================================== */
+
+pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  overflow-x: auto;
+}

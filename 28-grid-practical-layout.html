@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>28 - CSS Grid Practical Layout</title>
+
+    <link rel="stylesheet" href="28-grid-practical-layout.css" />
+  </head>
+
+  <body>
+    <h1>CSS Grid Practical Layout</h1>
+
+    <p>
+      This file combines the Grid concepts learned so far to create a complete
+      webpage layout.
+    </p>
+
+    <!--
+        COMPLETE WEBSITE LAYOUT
+
+        Grid areas:
+        header
+        sidebar
+        main
+        footer
+    -->
+
+    <div class="website">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">LearnHub</div>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Courses</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>Courses</h3>
+
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+        <a href="#">Python</a>
+        <a href="#">C++</a>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main">
+        <h1>Learn Web Development</h1>
+
+        <p>Choose a course and start learning.</p>
+
+        <!-- Course cards -->
+        <section class="course-grid">
+          <article class="course-card">
+            <h3>HTML</h3>
+            <p>Learn the structure of webpages.</p>
+            <button>Learn HTML</button>
+          </article>
+
+          <article class="course-card">
+            <h3>CSS</h3>
+            <p>Learn how to style webpages.</p>
+            <button>Learn CSS</button>
+          </article>
+
+          <article class="course-card">
+            <h3>JavaScript</h3>
+            <p>Add logic and interactivity.</p>
+            <button>Learn JavaScript</button>
+          </article>
+
+          <article class="course-card">
+            <h3>Python</h3>
+            <p>Learn programming with Python.</p>
+            <button>Learn Python</button>
+          </article>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2026 LearnHub</p>
+      </footer>
+    </div>
+
+    <h2>CSS Grid Concepts Used</h2>
+
+    <ul>
+      <li>display: grid</li>
+      <li>grid-template-columns</li>
+      <li>grid-template-rows</li>
+      <li>grid-template-areas</li>
+      <li>grid-area</li>
+      <li>gap</li>
+      <li>repeat()</li>
+      <li>fr unit</li>
+      <li>Media queries</li>
+    </ul>
+
+    <h2>Basic Structure</h2>
+
+    <pre>
+.website {
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    grid-template-rows:
+        80px
+        1fr
+        70px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+    </pre>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+/* ==================================================
+   BASIC PAGE
+   ================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   COMMON GRID
+   ================================================== */
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 700px;
+  max-width: 100%;
+  height: 180px;
+
+  gap: 15px;
+
+  padding: 20px;
+  margin-bottom: 30px;
+
+  border: 2px solid black;
+  background-color: #eeeeee;
+}
+
+/* ==================================================
+   GRID ITEM
+   ================================================== */
+
+.box {
+  width: 80px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  border: 2px solid blue;
+  background-color: lightblue;
+}
+
+/* ==================================================
+   JUSTIFY ITEMS
+   ================================================== */
+
+.justify-start {
+  justify-items: start;
+}
+
+.justify-center {
+  justify-items: center;
+}
+
+.justify-end {
+  justify-items: end;
+}
+
+/* ==================================================
+   ALIGN ITEMS
+   ================================================== */
+
+.align-start {
+  align-items: start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: end;
+}
+
+/* ==================================================
+   PLACE ITEMS
+   ================================================== */
+
+.place-center {
+  place-items: center;
+}
+
+/* ==================================================
+   SMALL GRID
+   ================================================== */
+
+.small-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 70px);
+
+  width: 500px;
+  height: 250px;
+
+  gap: 10px;
+
+  padding: 20px;
+
+  border: 2px solid black;
+  background-color: #eeeeee;
+}
+
+/* ==================================================
+   JUSTIFY CONTENT
+   ================================================== */
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/* ==================================================
+   ALIGN CONTENT
+   ================================================== */
+
+.align-content-center {
+  align-content: center;
+}
+
+/* ==================================================
+   LOGIN CONTAINER
+   ================================================== */
+
+.login-container {
+  display: grid;
+
+  place-items: center;
+
+  min-height: 400px;
+
+  padding: 30px;
+
+  border: 2px solid #333333;
+  background-color: #eeeeee;
+}
+
+/* ==================================================
+   LOGIN CARD
+   ================================================== */
+
+.login-card {
+  display: grid;
+
+  gap: 10px;
+
+  width: 350px;
+  max-width: 100%;
+
+  padding: 30px;
+
+  border: 2px solid #333333;
+  background-color: white;
+}
+
+.login-card h2 {
+  margin-top: 0;
+  text-align: center;
+  color: darkblue;
+}
+
+.login-card input {
+  padding: 10px;
+
+  border: 2px solid #333333;
+}
+
+.login-card button {
+  padding: 10px;
+
+  border: 2px solid darkblue;
+  background-color: white;
+
+  cursor: pointer;
+}
+
+/* ==================================================
+   PRODUCT GRID
+   ================================================== */
+
+.products {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  max-width: 800px;
+
+  align-items: stretch;
+}
+
+.product {
+  display: grid;
+
+  gap: 10px;
+
+  padding: 25px;
+
+  border: 2px solid #333333;
+  background-color: #f4f4f4;
+}
+
+.product h3 {
+  margin: 0;
+  color: darkblue;
+}
+
+.product button {
+  align-self: end;
+
+  padding: 10px;
+
+  border: 2px solid darkblue;
+  background-color: white;
+
+  cursor: pointer;
+}
+
+/* ==================================================
+   CODE
+   ================================================== */
+
+pre {
+  padding: 15px;
+
+  background-color: #f4f4f4;
+
+  overflow-x: auto;
+}

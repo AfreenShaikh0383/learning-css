@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>16 - Flexbox Introduction</title>
+
+    <link rel="stylesheet" href="16-flexbox-introduction.css" />
+  </head>
+
+  <body>
+    <h1>16 - Flexbox Introduction</h1>
+
+    <p>
+      Flexbox is a CSS layout system used to arrange elements in rows or
+      columns.
+    </p>
+
+    <!-- ==================================================
+         BASIC FLEX CONTAINER
+         ================================================== -->
+
+    <h2>1. Basic Flex Container</h2>
+
+    <p>
+      An element becomes a flex container when we use:
+      <code>display: flex;</code>
+    </p>
+
+    <div class="flex-container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+
+    <!-- ==================================================
+         NORMAL BLOCK VS FLEX
+         ================================================== -->
+
+    <h2>2. Normal Block Elements</h2>
+
+    <div class="normal-container">
+      <div class="normal-box">Box 1</div>
+      <div class="normal-box">Box 2</div>
+      <div class="normal-box">Box 3</div>
+    </div>
+
+    <h2>3. Flex Container</h2>
+
+    <div class="flex-container second">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+
+    <!-- ==================================================
+         GAP
+         ================================================== -->
+
+    <h2>4. Gap Between Flex Items</h2>
+
+    <p><code>gap</code> creates space between flex items.</p>
+
+    <div class="gap-container">
+      <div class="box">HTML</div>
+      <div class="box">CSS</div>
+      <div class="box">JavaScript</div>
+    </div>
+
+    <!-- ==================================================
+         FLEX ITEM
+         ================================================== -->
+
+    <h2>5. Flex Items</h2>
+
+    <div class="item-container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL EXAMPLE
+         ================================================== -->
+
+    <h2>6. Practical Example - Course Cards</h2>
+
+    <div class="courses">
+      <div class="course-card">
+        <h3>HTML</h3>
+        <p>Learn the structure of web pages.</p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="course-card">
+        <h3>CSS</h3>
+        <p>Learn how to style web pages.</p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="course-card">
+        <h3>JavaScript</h3>
+        <p>Learn programming for the web.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+    <!-- ==================================================
+         FLEX TERMINOLOGY
+         ================================================== -->
+
+    <h2>7. Important Flexbox Terms</h2>
+
+    <ul>
+      <li>
+        <strong>Flex Container:</strong> Parent element with display: flex.
+      </li>
+      <li>
+        <strong>Flex Items:</strong> Direct children of the flex container.
+      </li>
+      <li><strong>Main Axis:</strong> Primary direction of the flex layout.</li>
+      <li>
+        <strong>Cross Axis:</strong> Direction perpendicular to the main axis.
+      </li>
+      <li><strong>gap:</strong> Space between flex items.</li>
+    </ul>
+
+    <!-- ==================================================
+         BASIC SYNTAX
+         ================================================== -->
+
+    <h2>8. Basic Flexbox Syntax</h2>
+
+    <pre>
+.container {
+    display: flex;
+    gap: 20px;
+}
+    </pre>
+  </body>
+</html>

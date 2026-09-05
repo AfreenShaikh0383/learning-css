@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Overflow</title>
+
+    <link rel="stylesheet" href="14-overflow.css" />
+  </head>
+
+  <body>
+    <h1>CSS Overflow</h1>
+
+    <p>
+      Overflow controls what happens when content is larger than the available
+      space inside an element.
+    </p>
+
+    <!-- ==================== VISIBLE ==================== -->
+
+    <h2>1. Overflow: Visible</h2>
+
+    <div class="visible">
+      This content is larger than the box. With overflow: visible, the extra
+      content can appear outside the element.
+    </div>
+
+    <!-- ==================== HIDDEN ==================== -->
+
+    <h2>2. Overflow: Hidden</h2>
+
+    <div class="hidden">
+      This content is larger than the box. The extra content is hidden when it
+      goes outside the box.
+    </div>
+
+    <!-- ==================== SCROLL ==================== -->
+
+    <h2>3. Overflow: Scroll</h2>
+
+    <div class="scroll">
+      This box has a fixed size. More content creates scrollbars so the user can
+      scroll through the hidden content. This is useful when you want a
+      fixed-size scrolling area.
+    </div>
+
+    <!-- ==================== AUTO ==================== -->
+
+    <h2>4. Overflow: Auto</h2>
+
+    <div class="auto">
+      This box automatically provides scrolling when the content becomes larger
+      than the available space. Add more content to see the scrollbar.
+    </div>
+
+    <!-- ==================== OVERFLOW X ==================== -->
+
+    <h2>5. Overflow-X</h2>
+
+    <div class="overflow-x">
+      This is a very long line of text that demonstrates horizontal overflow
+      handling.
+    </div>
+
+    <!-- ==================== OVERFLOW Y ==================== -->
+
+    <h2>6. Overflow-Y</h2>
+
+    <div class="overflow-y">
+      Line 1<br />
+      Line 2<br />
+      Line 3<br />
+      Line 4<br />
+      Line 5<br />
+      Line 6<br />
+      Line 7<br />
+      Line 8
+    </div>
+
+    <!-- ==================== PRACTICAL EXAMPLE ==================== -->
+
+    <h2>7. Practical Example</h2>
+
+    <div class="code-box">
+      <h3>Example Code</h3>
+
+      <pre>
+body {
+    font-family: Arial;
+}
+
+.container {
+    width: 500px;
+}
+        </pre
+      >
+    </div>
+  </body>
+</html>

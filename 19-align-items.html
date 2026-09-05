@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>19 - Align Items</title>
+
+    <link rel="stylesheet" href="19-align-items.css" />
+  </head>
+
+  <body>
+    <h1>19 - Align Items</h1>
+
+    <p>
+      The <code>align-items</code> property controls the alignment of flex items
+      along the cross axis.
+    </p>
+
+    <!-- ==================================================
+         STRETCH
+         ================================================== -->
+
+    <h2>1. align-items: stretch</h2>
+
+    <p>
+      This is the default value. Items stretch to fill the cross axis when
+      possible.
+    </p>
+
+    <div class="container stretch">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         FLEX START
+         ================================================== -->
+
+    <h2>2. align-items: flex-start</h2>
+
+    <p>Items are placed at the beginning of the cross axis.</p>
+
+    <div class="container flex-start">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         FLEX END
+         ================================================== -->
+
+    <h2>3. align-items: flex-end</h2>
+
+    <p>Items are placed at the end of the cross axis.</p>
+
+    <div class="container flex-end">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         CENTER
+         ================================================== -->
+
+    <h2>4. align-items: center</h2>
+
+    <p>Items are placed in the center of the cross axis.</p>
+
+    <div class="container center">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         BASELINE
+         ================================================== -->
+
+    <h2>5. align-items: baseline</h2>
+
+    <p>Items are aligned according to their text baseline.</p>
+
+    <div class="container baseline">
+      <div class="small-box">Small Text</div>
+      <div class="large-box">Large Text</div>
+      <div class="medium-box">Medium Text</div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL EXAMPLE
+         ================================================== -->
+
+    <h2>6. Practical Example - Header</h2>
+
+    <header class="header">
+      <h2>My Website</h2>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <button>Login</button>
+    </header>
+
+    <!-- ==================================================
+         PRACTICAL EXAMPLE
+         ================================================== -->
+
+    <h2>7. Practical Example - Profile</h2>
+
+    <div class="profile">
+      <div class="avatar">A</div>
+
+      <div class="profile-info">
+        <h3>Afreen</h3>
+        <p>Software Developer</p>
+      </div>
+
+      <button>View Profile</button>
+    </div>
+
+    <!-- ==================================================
+         SYNTAX
+         ================================================== -->
+
+    <h2>8. Syntax</h2>
+
+    <pre>
+.container {
+    display: flex;
+    align-items: center;
+}
+    </pre>
+
+    <h2>9. Common Values</h2>
+
+    <ul>
+      <li><code>stretch</code></li>
+      <li><code>flex-start</code></li>
+      <li><code>flex-end</code></li>
+      <li><code>center</code></li>
+      <li><code>baseline</code></li>
+    </ul>
+  </body>
+</html>

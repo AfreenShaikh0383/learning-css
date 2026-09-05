@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>30 - CSS Media Queries</title>
+
+    <link rel="stylesheet" href="30-media-queries.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Media Query Practice</h1>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>What is a Media Query?</h2>
+
+      <p>
+        A media query allows CSS rules to be applied only when specific
+        conditions are true.
+      </p>
+
+      <h2>Basic Syntax</h2>
+
+      <pre>
+@media (max-width: 600px) {
+
+    body {
+        background-color: lightblue;
+    }
+
+}
+        </pre
+      >
+
+      <h2>Resize Your Browser</h2>
+
+      <p>Resize the browser window and observe the changes below.</p>
+
+      <section class="responsive-box">
+        <h2>Responsive Box</h2>
+
+        <p>My appearance changes depending on the screen width.</p>
+      </section>
+
+      <h2>Responsive Navigation</h2>
+
+      <nav class="demo-nav">
+        <a href="#">Home</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+        <a href="#">Projects</a>
+      </nav>
+
+      <h2>Responsive Grid</h2>
+
+      <section class="grid">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+        <div>Box 5</div>
+        <div>Box 6</div>
+      </section>
+
+      <h2>Different Breakpoints</h2>
+
+      <p>A webpage can have multiple media queries.</p>
+
+      <pre>
+/* Tablet */
+@media (max-width: 800px) {
+    ...
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    ...
+}
+        </pre
+      >
+
+      <h2>Media Query Features</h2>
+
+      <ul>
+        <li>max-width</li>
+        <li>min-width</li>
+        <li>orientation</li>
+        <li>screen size based layouts</li>
+      </ul>
+    </main>
+
+    <footer>Responsive CSS Practice</footer>
+  </body>
+</html>

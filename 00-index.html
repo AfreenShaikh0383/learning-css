@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Learning Index</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333333;
+      }
+
+      header {
+        padding: 45px 20px;
+        text-align: center;
+        background-color: #222222;
+        color: white;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 38px;
+      }
+
+      header p {
+        margin: 10px 0 0;
+        color: #cccccc;
+      }
+
+      main {
+        width: 90%;
+        max-width: 1000px;
+        margin: 30px auto;
+      }
+
+      .section {
+        margin-bottom: 25px;
+        padding: 25px;
+        background-color: white;
+        border: 2px solid #dddddd;
+        border-radius: 10px;
+      }
+
+      .section h2 {
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #dddddd;
+      }
+
+      .section p {
+        color: #666666;
+      }
+
+      .lesson-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .lesson-list a {
+        display: block;
+        padding: 12px 15px;
+        background-color: #f4f4f4;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        color: #333333;
+        text-decoration: none;
+      }
+
+      .lesson-list a:hover {
+        background-color: #dddddd;
+      }
+
+      .number {
+        font-weight: bold;
+      }
+
+      .final-project {
+        border: 2px solid #333333;
+        background-color: #eeeeee;
+      }
+
+      footer {
+        padding: 25px;
+        text-align: center;
+        background-color: #222222;
+        color: white;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 28px;
+        }
+
+        .lesson-list {
+          grid-template-columns: 1fr;
+        }
+
+        main {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Learning Roadmap</h1>
+      <p>Complete CSS practice repository — Lessons 01 to 50</p>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>1. CSS Fundamentals</h2>
+        <p>
+          Learn the foundation of CSS, syntax, selectors, colors and
+          backgrounds.
+        </p>
+
+        <ul class="lesson-list">
+          <li>
+            <a href="01-css-introduction.html"
+              ><span class="number">01.</span> CSS Introduction</a
+            >
+          </li>
+          <li>
+            <a href="02-css-syntax-and-selectors.html"
+              ><span class="number">02.</span> CSS Syntax and Selectors</a
+            >
+          </li>
+          <li>
+            <a href="03-colors-and-backgrounds.html"
+              ><span class="number">03.</span> Colors and Backgrounds</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>2. Core CSS</h2>
+        <p>
+          Learn text, fonts, the box model, dimensions, spacing, borders,
+          display and positioning.
+        </p>
+
+        <ul class="lesson-list">
+          <li>
+            <a href="04-text.html"><span class="number">04.</span> Text</a>
+          </li>
+          <li>
+            <a href="05-fonts.html"><span class="number">05.</span> Fonts</a>
+          </li>
+          <li>
+            <a href="06-box-model.html"
+              ><span class="number">06.</span> Box Model</a
+            >
+          </li>
+          <li>
+            <a href="07-width-height.html"
+              ><span class="number">07.</span> Width and Height</a
+            >
+          </li>
+          <li>
+            <a href="08-margin-padding.html"
+              ><span class="number">08.</span> Margin and Padding</a
+            >
+          </li>
+          <li>
+            <a href="09-borders-outline.html"
+              ><span class="number">09.</span> Borders and Outline</a
+            >
+          </li>
+          <li>
+            <a href="10-display.html"
+              ><span class="number">10.</span> Display</a
+            >
+          </li>
+          <li>
+            <a href="11-visibility.html"
+              ><span class="number">11.</span> Visibility</a
+            >
+          </li>
+          <li>
+            <a href="12-positioning.html"
+              ><span class="number">12.</span> Positioning</a
+            >
+          </li>
+          <li>
+            <a href="13-float-clear.html"
+              ><span class="number">13.</span> Float and Clear</a
+            >
+          </li>
+          <li>
+            <a href="14-overflow.html"
+              ><span class="number">14.</span> Overflow</a
+            >
+          </li>
+          <li>
+            <a href="15-z-index.html"
+              ><span class="number">15.</span> Z-Index</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>3. CSS Flexbox</h2>
+        <p>
+          Learn one-dimensional layouts and practical Flexbox page structures.
+        </p>
+
+        <ul class="lesson-list">
+          <li>
+            <a href="16-flexbox-introduction.html"
+              ><span class="number">16.</span> Flexbox Introduction</a
+            >
+          </li>
+          <li>
+            <a href="17-flex-direction.html"
+              ><span class="number">17.</span> Flex Direction</a
+            >
+          </li>
+          <li>
+            <a href="18-justify-content.html"
+              ><span class="number">18.</span> Justify Content</a
+            >
+          </li>
+          <li>
+            <a href="19-align-items.html"
+              ><span class="number">19.</span> Align Items</a
+            >
+          </li>
+          <li>
+            <a href="20-flex-wrap.html"
+              ><span class="number">20.</span> Flex Wrap</a
+            >
+          </li>
+          <li>
+            <a href="21-flex-grow-shrink-basis.html"
+              ><span class="number">21.</span> Flex Grow, Shrink and Basis</a
+            >
+          </li>
+          <li>
+            <a href="22-flexbox-practical-layout.html"
+              ><span class="number">22.</span> Flexbox Practical Layout</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>4. CSS Grid</h2>
+        <p>
+          Learn two-dimensional layouts using Grid, including columns, rows,
+          gaps and areas.
+        </p>
+
+        <ul class="lesson-list">
+          <li>
+            <a href="23-css-grid-introduction.html"
+              ><span class="number">23.</span> CSS Grid Introduction</a
+            >
+          </li>
+          <li>
+            <a href="24-grid-columns-and-rows.html"
+              ><span class="number">24.</span> Grid Columns and Rows</a
+            >
+          </li>
+          <li>
+            <a href="25-grid-gap.html"
+              ><span class="number">25.</span> Grid Gap</a
+            >
+          </li>
+          <li>
+            <a href="26-grid-areas.html"
+              ><span class="number">26.</span> Grid Areas</a
+            >
+          </li>
+          <li>
+            <a href="27-grid-alignment.html"
+              ><span class="number">27.</span> Grid Alignment</a
+            >
+          </li>
+          <li>
+            <a href="28-grid-practical-layout.html"
+              ><span class="number">28.</span> Grid Practical Layout</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>5. Responsive Design</h2>
+        <p>Learn how websites adapt to desktops, tablets and mobile screens.</p>
+
+        <ul class="lesson-list">
+          <li>
+            <a href="29-responsive-design-introduction.html"
+              ><span class="number">29.</span> Responsive Design Introduction</a
+            >
+          </li>
+          <li>
+            <a href="30-media-queries.html"
+              ><span class="number">30.</span> Media Queries</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>6. Advanced CSS</h2>
+        <p>
+          Learn responsive sizing, pseudo-classes, pseudo-elements, forms,
+          variables, functions and advanced selectors.
+        </p>
+
+        <ul class="lesson-list">
+          <li>
+            <a href="31-css-units.html"
+              ><span class="number">31.</span> CSS Units</a
+            >
+          </li>
+          <li>
+            <a href="32-em-and-rem.html"
+              ><span class="number">32.</span> em and rem</a
+            >
+          </li>
+          <li>
+            <a href="33-vw-vh.html"
+              ><span class="number">33.</span> vw and vh</a
+            >
+          </li>
+          <li>
+            <a href="34-responsive-sizing.html"
+              ><span class="number">34.</span> Responsive Sizing</a
+            >
+          </li>
+          <li>
+            <a href="35-responsive-typography.html"
+              ><span class="number">35.</span> Responsive Typography</a
+            >
+          </li>
+          <li>
+            <a href="36-pseudo-classes.html"
+              ><span class="number">36.</span> Pseudo-Classes</a
+            >
+          </li>
+          <li>
+            <a href="37-pseudo-elements.html"
+              ><span class="number">37.</span> Pseudo-Elements</a
+            >
+          </li>
+          <li>
+            <a href="38-links.html"
+              ><span class="number">38.</span> Styling Links</a
+            >
+          </li>
+          <li>
+            <a href="39-forms-and-inputs.html"
+              ><span class="number">39.</span> Forms and Inputs</a
+            >
+          </li>
+          <li>
+            <a href="40-buttons.html"
+              ><span class="number">40.</span> Buttons</a
+            >
+          </li>
+          <li>
+            <a href="41-css-variables.html"
+              ><span class="number">41.</span> CSS Variables</a
+            >
+          </li>
+          <li>
+            <a href="42-css-functions.html"
+              ><span class="number">42.</span> CSS Functions</a
+            >
+          </li>
+          <li>
+            <a href="43-clamp.html"><span class="number">43.</span> clamp()</a>
+          </li>
+          <li>
+            <a href="44-advanced-selectors.html"
+              ><span class="number">44.</span> Advanced Selectors</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Transitions, Transforms and Animations</h2>
+        <p>
+          Learn how to create interactive effects, movement, shadows and visual
+          styling.
+        </p>
+
+        <ul class="lesson-list">
+          <li>
+            <a href="45-transitions.html"
+              ><span class="number">45.</span> CSS Transitions</a
+            >
+          </li>
+          <li>
+            <a href="46-transforms.html"
+              ><span class="number">46.</span> CSS Transforms</a
+            >
+          </li>
+          <li>
+            <a href="47-animations.html"
+              ><span class="number">47.</span> CSS Animations</a
+            >
+          </li>
+          <li>
+            <a href="48-shadows-and-gradients.html"
+              ><span class="number">48.</span> Shadows and Gradients</a
+            >
+          </li>
+          <li>
+            <a href="49-responsive-components.html"
+              ><span class="number">49.</span> Responsive Components</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section final-project">
+        <h2>8. Final CSS Project</h2>
+        <p>
+          Combine the CSS concepts learned throughout the repository into one
+          complete responsive website.
+        </p>
+
+        <ul class="lesson-list">
+          <li>
+            <a href="50-complete-responsive-css-project.html"
+              ><span class="number">50.</span> Complete Responsive CSS
+              Project</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>CSS Learning Repository</p>
+      <p>Lessons 01 - 50</p>
+    </footer>
+  </body>
+</html>

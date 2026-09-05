@@ -1,0 +1,229 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 30px;
+
+  line-height: 1.6;
+}
+
+/* ==================== BASIC STACK ==================== */
+
+.stack-container {
+  position: relative;
+
+  width: 500px;
+
+  height: 250px;
+}
+
+.box-one {
+  position: absolute;
+
+  top: 20px;
+
+  left: 20px;
+
+  width: 150px;
+
+  height: 150px;
+
+  padding: 20px;
+
+  background-color: lightblue;
+
+  border: 2px solid blue;
+
+  z-index: 1;
+}
+
+.box-two {
+  position: absolute;
+
+  top: 60px;
+
+  left: 100px;
+
+  width: 150px;
+
+  height: 150px;
+
+  padding: 20px;
+
+  background-color: lightgreen;
+
+  border: 2px solid green;
+
+  z-index: 2;
+}
+
+.box-three {
+  position: absolute;
+
+  top: 100px;
+
+  left: 180px;
+
+  width: 150px;
+
+  height: 150px;
+
+  padding: 20px;
+
+  background-color: lightyellow;
+
+  border: 2px solid orange;
+
+  z-index: 3;
+}
+
+/* ==================== HIGHER Z-INDEX ==================== */
+
+.layer-container {
+  position: relative;
+
+  width: 500px;
+
+  height: 200px;
+}
+
+.layer-one {
+  position: absolute;
+
+  top: 30px;
+
+  left: 50px;
+
+  width: 250px;
+
+  height: 120px;
+
+  padding: 20px;
+
+  background-color: lightblue;
+
+  border: 2px solid blue;
+
+  z-index: 1;
+}
+
+.layer-ten {
+  position: absolute;
+
+  top: 70px;
+
+  left: 150px;
+
+  width: 250px;
+
+  height: 120px;
+
+  padding: 20px;
+
+  background-color: lightpink;
+
+  border: 2px solid red;
+
+  /*
+        10 is higher than 1,
+        so this box appears on top.
+    */
+  z-index: 10;
+}
+
+/* ==================== NEGATIVE Z-INDEX ==================== */
+
+.negative-container {
+  position: relative;
+
+  width: 400px;
+
+  height: 180px;
+
+  padding: 30px;
+
+  border: 2px solid black;
+
+  box-sizing: border-box;
+}
+
+.background-layer {
+  position: absolute;
+
+  inset: 0;
+
+  background-color: lightblue;
+
+  z-index: -1;
+}
+
+.content-layer {
+  position: relative;
+
+  z-index: 1;
+
+  padding: 30px;
+
+  background-color: white;
+
+  border: 2px solid blue;
+}
+
+/* ==================== PRACTICAL CARD ==================== */
+
+.card {
+  position: relative;
+
+  width: 400px;
+
+  padding: 30px;
+
+  border: 2px solid #333333;
+
+  border-radius: 10px;
+
+  background-color: #f4f4f4;
+
+  box-sizing: border-box;
+}
+
+/* ==================== BADGE ==================== */
+
+.badge {
+  position: absolute;
+
+  top: -10px;
+
+  right: -10px;
+
+  padding: 8px 15px;
+
+  background-color: red;
+
+  color: white;
+
+  font-weight: bold;
+
+  border-radius: 5px;
+
+  /*
+        Ensures the badge
+        stays above card content.
+    */
+  z-index: 5;
+}
+
+.card h2 {
+  color: darkblue;
+}
+
+.card button {
+  padding: 10px 20px;
+
+  border: 2px solid darkblue;
+
+  background-color: white;
+
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Visibility</title>
+
+    <link rel="stylesheet" href="11-visibility.css" />
+  </head>
+
+  <body>
+    <h1>CSS Visibility</h1>
+
+    <p>The visibility property controls whether an element can be seen.</p>
+
+    <!-- ==================== VISIBLE ==================== -->
+
+    <h2>1. Visibility: Visible</h2>
+
+    <div class="visible">This element is visible.</div>
+
+    <!-- ==================== HIDDEN ==================== -->
+
+    <h2>2. Visibility: Hidden</h2>
+
+    <div class="box">Box 1</div>
+
+    <div class="hidden">Box 2 is hidden.</div>
+
+    <div class="box">Box 3</div>
+
+    <p>Notice that the hidden box still occupies space.</p>
+
+    <!-- ==================== DISPLAY NONE COMPARISON ==================== -->
+
+    <h2>3. Visibility vs Display</h2>
+
+    <div class="comparison-box">Box 1</div>
+
+    <div class="visibility-hidden">Box 2 - visibility: hidden</div>
+
+    <div class="comparison-box">Box 3</div>
+
+    <br />
+
+    <div class="comparison-box">Box 4</div>
+
+    <div class="display-none">Box 5 - display: none</div>
+
+    <div class="comparison-box">Box 6</div>
+
+    <!-- ==================== PRACTICAL EXAMPLE ==================== -->
+
+    <h2>4. Practical Example</h2>
+
+    <div class="card">
+      <h2>Course</h2>
+
+      <p>This course is currently unavailable.</p>
+
+      <button class="disabled-button">Not Available</button>
+    </div>
+  </body>
+</html>

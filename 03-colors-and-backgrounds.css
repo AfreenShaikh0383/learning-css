@@ -1,0 +1,175 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================== COLOR NAMES ==================== */
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+}
+
+/* ==================== HEX ==================== */
+
+.hex-color {
+  color: #ff6600;
+}
+
+/* ==================== RGB ==================== */
+
+.rgb-color {
+  color: rgb(128, 0, 128);
+}
+
+/* ==================== RGBA ==================== */
+
+.rgba-color {
+  background-color: rgba(0, 0, 255, 0.5);
+  padding: 15px;
+}
+
+/* ==================== HSL ==================== */
+
+.hsl-color {
+  color: hsl(120, 100%, 30%);
+}
+
+/* ==================== BACKGROUND COLOR ==================== */
+
+.background-color-example {
+  background-color: lightblue;
+  padding: 30px;
+}
+
+/* ==================== BACKGROUND IMAGE ==================== */
+
+.background-image-example {
+  height: 200px;
+
+  background-image: url("https://picsum.photos/800/300");
+
+  background-size: cover;
+
+  background-position: center;
+
+  padding: 30px;
+
+  color: white;
+}
+
+/* ==================== BACKGROUND REPEAT ==================== */
+
+.repeat-example {
+  height: 150px;
+
+  background-image: url("https://picsum.photos/100/100");
+
+  background-repeat: no-repeat;
+
+  border: 2px solid black;
+
+  padding: 20px;
+}
+
+/* ==================== BACKGROUND POSITION ==================== */
+
+.position-example {
+  height: 150px;
+
+  background-image: url("https://picsum.photos/800/300");
+
+  background-size: 300px;
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  border: 2px solid black;
+
+  padding: 20px;
+}
+
+/* ==================== BACKGROUND SIZE ==================== */
+
+.size-example {
+  height: 200px;
+
+  background-image: url("https://picsum.photos/800/300");
+
+  background-size: cover;
+
+  background-position: center;
+
+  color: white;
+
+  padding: 30px;
+}
+
+/* ==================== GRADIENT ==================== */
+
+.gradient-example {
+  padding: 40px;
+
+  background: linear-gradient(to right, blue, purple);
+
+  color: white;
+}
+
+/* ==================== COURSE CARD ==================== */
+
+.course-card {
+  max-width: 450px;
+
+  padding: 25px;
+
+  color: white;
+
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+
+  border-radius: 10px;
+}
+
+.course-card h3 {
+  margin-top: 0;
+}
+
+/* ==================== CODE ==================== */
+
+pre {
+  background-color: #f4f4f4;
+
+  padding: 15px;
+
+  overflow-x: auto;
+}
+
+/* ==================== HEADER ==================== */
+
+.page-header {
+  background-color: #eeeeee;
+
+  padding: 20px;
+
+  margin-bottom: 30px;
+}
+
+/* ==================== FOOTER ==================== */
+
+footer {
+  margin-top: 30px;
+
+  padding: 20px;
+
+  background-color: #eeeeee;
+}

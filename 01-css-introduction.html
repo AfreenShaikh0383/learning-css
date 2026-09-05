@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Introduction</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="01-css-introduction.css" />
+
+    <!-- Internal CSS example -->
+    <style>
+      .internal-example {
+        background-color: lightyellow;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Introduction</h1>
+
+      <p>CSS stands for Cascading Style Sheets.</p>
+    </header>
+
+    <hr />
+
+    <main>
+      <!-- ==================== WHAT IS CSS ==================== -->
+      <section>
+        <h2>What is CSS?</h2>
+
+        <p>CSS is used to style and design HTML elements.</p>
+
+        <p>
+          HTML creates the structure, while CSS controls the appearance and
+          layout.
+        </p>
+      </section>
+
+      <!-- ==================== INLINE CSS ==================== -->
+      <section>
+        <h2>1. Inline CSS</h2>
+
+        <p style="color: blue">This paragraph uses inline CSS.</p>
+
+        <p>
+          CSS is written directly inside the
+          <code>style</code> attribute.
+        </p>
+
+        <pre>
+&lt;p style="color: blue;"&gt;
+    This is inline CSS.
+&lt;/p&gt;
+            </pre
+        >
+      </section>
+
+      <!-- ==================== INTERNAL CSS ==================== -->
+      <section>
+        <h2>2. Internal CSS</h2>
+
+        <p class="internal-example">This paragraph uses internal CSS.</p>
+
+        <p>
+          Internal CSS is written inside a
+          <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code>.
+        </p>
+
+        <pre>
+&lt;style&gt;
+
+    .example {
+        color: blue;
+    }
+
+&lt;/style&gt;
+            </pre
+        >
+      </section>
+
+      <!-- ==================== EXTERNAL CSS ==================== -->
+      <section>
+        <h2>3. External CSS</h2>
+
+        <p class="external-example">
+          This paragraph is styled using an external CSS file.
+        </p>
+
+        <p>This is the method we will mainly use in this repository.</p>
+
+        <pre>
+&lt;link rel="stylesheet" href="01-css-introduction.css"&gt;
+            </pre
+        >
+      </section>
+
+      <!-- ==================== CSS SYNTAX ==================== -->
+      <section>
+        <h2>Basic CSS Syntax</h2>
+
+        <pre>
+selector {
+    property: value;
+}
+            </pre
+        >
+
+        <p>Example:</p>
+
+        <pre>
+p {
+    color: blue;
+    font-size: 20px;
+}
+            </pre
+        >
+      </section>
+
+      <!-- ==================== CASCADING ==================== -->
+      <section>
+        <h2>What does "Cascading" mean?</h2>
+
+        <p>
+          When multiple CSS rules apply to the same element, the browser
+          determines which rule should take priority.
+        </p>
+
+        <p>
+          This depends on factors such as importance, specificity and source
+          order.
+        </p>
+      </section>
+
+      <!-- ==================== CSS BENEFITS ==================== -->
+      <section>
+        <h2>Why use CSS?</h2>
+
+        <ul>
+          <li>Change colors</li>
+          <li>Change fonts</li>
+          <li>Control spacing</li>
+          <li>Create layouts</li>
+          <li>Make websites responsive</li>
+          <li>Add animations and transitions</li>
+          <li>Separate design from HTML structure</li>
+        </ul>
+      </section>
+
+      <!-- ==================== PRACTICAL EXAMPLE ==================== -->
+      <section>
+        <h2>Practical Example</h2>
+
+        <div class="profile-card">
+          <h3>Afreen's Profile</h3>
+
+          <p>Learning HTML, CSS and JavaScript.</p>
+
+          <button>View Profile</button>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>End of CSS Introduction</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>25 - Grid Gap</title>
+
+    <link rel="stylesheet" href="25-grid-gap.css" />
+  </head>
+
+  <body>
+    <h1>25 - Grid Gap</h1>
+
+    <p>
+      The <code>gap</code> property creates space between rows and columns in a
+      CSS Grid.
+    </p>
+
+    <!-- ==================================================
+         BASIC GAP
+         ================================================== -->
+
+    <h2>1. Basic gap</h2>
+
+    <div class="basic-grid">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+
+    <!-- ==================================================
+         ROW GAP
+         ================================================== -->
+
+    <h2>2. row-gap</h2>
+
+    <p><code>row-gap</code> controls the space between rows.</p>
+
+    <div class="row-gap-grid">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+
+    <!-- ==================================================
+         COLUMN GAP
+         ================================================== -->
+
+    <h2>3. column-gap</h2>
+
+    <p><code>column-gap</code> controls the space between columns.</p>
+
+    <div class="column-gap-grid">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+
+    <!-- ==================================================
+         DIFFERENT ROW AND COLUMN GAP
+         ================================================== -->
+
+    <h2>4. Different Row and Column Gap</h2>
+
+    <div class="different-gap-grid">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <!-- ==================================================
+         GAP SHORTHAND
+         ================================================== -->
+
+    <h2>5. Gap Shorthand</h2>
+
+    <p>One value applies the same gap to rows and columns.</p>
+
+    <pre>
+.container {
+    gap: 20px;
+}
+    </pre>
+
+    <p>
+      Two values represent:
+      <strong>row gap / column gap</strong>.
+    </p>
+
+    <pre>
+.container {
+    gap: 20px 40px;
+}
+    </pre>
+
+    <!-- ==================================================
+         PRACTICAL COURSE GRID
+         ================================================== -->
+
+    <h2>6. Practical Example - Course Cards</h2>
+
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>HTML</h3>
+        <p>Learn webpage structure.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>CSS</h3>
+        <p>Learn webpage styling.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>JavaScript</h3>
+        <p>Learn programming.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>React</h3>
+        <p>Build user interfaces.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>Node.js</h3>
+        <p>Learn backend development.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>SQL</h3>
+        <p>Learn databases.</p>
+      </div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL IMAGE GALLERY
+         ================================================== -->
+
+    <h2>7. Practical Example - Gallery</h2>
+
+    <div class="gallery">
+      <div class="gallery-item">Image 1</div>
+      <div class="gallery-item">Image 2</div>
+      <div class="gallery-item">Image 3</div>
+      <div class="gallery-item">Image 4</div>
+      <div class="gallery-item">Image 5</div>
+      <div class="gallery-item">Image 6</div>
+    </div>
+
+    <!-- ==================================================
+         QUICK REFERENCE
+         ================================================== -->
+
+    <h2>8. Quick Reference</h2>
+
+    <ul>
+      <li><code>gap</code> → row + column gap</li>
+      <li><code>row-gap</code> → gap between rows</li>
+      <li><code>column-gap</code> → gap between columns</li>
+    </ul>
+  </body>
+</html>

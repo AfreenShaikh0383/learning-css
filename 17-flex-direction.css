@@ -1,0 +1,117 @@
+/* ==================================================
+   BASIC PAGE
+   ================================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   COMMON FLEX CONTAINER
+   ================================================== */
+
+.container {
+  display: flex;
+  gap: 15px;
+  min-height: 120px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 2px solid black;
+  background-color: #eeeeee;
+}
+
+/* ==================================================
+   FLEX ITEMS
+   ================================================== */
+
+.box {
+  width: 80px;
+  padding: 20px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ==================================================
+   ROW
+   ================================================== */
+
+.row {
+  flex-direction: row;
+}
+
+/* ==================================================
+   ROW REVERSE
+   ================================================== */
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* ==================================================
+   COLUMN
+   ================================================== */
+
+.column {
+  flex-direction: column;
+}
+
+/* ==================================================
+   COLUMN REVERSE
+   ================================================== */
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* ==================================================
+   NAVIGATION
+   ================================================== */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 15px;
+  background-color: #333333;
+}
+
+.navbar a {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ==================================================
+   SIDEBAR
+   ================================================== */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 5px;
+  padding: 15px;
+  background-color: #eeeeee;
+}
+
+.sidebar a {
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+/* ==================================================
+   CODE
+   ================================================== */
+
+pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  overflow-x: auto;
+}

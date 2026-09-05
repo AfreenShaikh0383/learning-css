@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Float and Clear</title>
+
+    <link rel="stylesheet" href="13-float-clear.css" />
+  </head>
+
+  <body>
+    <h1>CSS Float and Clear</h1>
+
+    <p>
+      The float property moves an element to the left or right. Other content
+      can wrap around the floated element.
+    </p>
+
+    <!-- ==================== FLOAT LEFT ==================== -->
+
+    <h2>1. Float Left</h2>
+
+    <div class="float-left">LEFT</div>
+
+    <p>
+      This paragraph wraps around the floated element. Float was traditionally
+      used to place images or other elements beside text. The content flows
+      around the floated element.
+    </p>
+
+    <div class="clear"></div>
+
+    <!-- ==================== FLOAT RIGHT ==================== -->
+
+    <h2>2. Float Right</h2>
+
+    <div class="float-right">RIGHT</div>
+
+    <p>
+      This paragraph wraps around the element that is floated to the right. The
+      text occupies the available space beside the floated element.
+    </p>
+
+    <div class="clear"></div>
+
+    <!-- ==================== TWO FLOATS ==================== -->
+
+    <h2>3. Two Floating Elements</h2>
+
+    <div class="box-left">Left</div>
+
+    <div class="box-right">Right</div>
+
+    <p>These two boxes are floated in opposite directions.</p>
+
+    <div class="clear"></div>
+
+    <!-- ==================== CLEAR LEFT ==================== -->
+
+    <h2>4. Clear Left</h2>
+
+    <div class="small-left">Float Left</div>
+
+    <p class="clear-left">
+      This paragraph uses clear: left. It moves below the left floating element.
+    </p>
+
+    <div class="clear"></div>
+
+    <!-- ==================== CLEAR BOTH ==================== -->
+
+    <h2>5. Clear Both</h2>
+
+    <div class="left-box">Left Float</div>
+
+    <div class="right-box">Right Float</div>
+
+    <p class="clear-both">
+      This paragraph uses clear: both. It moves below both floating elements.
+    </p>
+
+    <div class="clear"></div>
+
+    <!-- ==================== PRACTICAL ARTICLE ==================== -->
+
+    <h2>6. Practical Example</h2>
+
+    <article class="article">
+      <div class="article-image">IMAGE</div>
+
+      <h2>Learning CSS</h2>
+
+      <p>
+        CSS is used to style webpages and control their appearance. Float can be
+        used to position an element beside text.
+      </p>
+
+      <p>
+        Although modern layouts generally use Flexbox or Grid, understanding
+        float and clear is still useful when learning CSS.
+      </p>
+
+      <div class="clear"></div>
+    </article>
+  </body>
+</html>

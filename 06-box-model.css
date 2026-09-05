@@ -1,0 +1,190 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 30px;
+
+  line-height: 1.6;
+}
+
+/* ==================== CONTENT ==================== */
+
+.content-example {
+  width: 300px;
+
+  background-color: lightblue;
+}
+
+/* ==================== PADDING ==================== */
+
+.padding-example {
+  width: 300px;
+
+  background-color: lightgreen;
+
+  /* Space between content and border */
+  padding: 30px;
+}
+
+/* ==================== BORDER ==================== */
+
+.border-example {
+  width: 300px;
+
+  padding: 20px;
+
+  /* width + style + color */
+  border: 5px solid blue;
+}
+
+/* ==================== MARGIN ==================== */
+
+.margin-example {
+  width: 300px;
+
+  padding: 20px;
+
+  border: 3px solid black;
+
+  /* Space outside the border */
+  margin: 40px;
+}
+
+.second-box {
+  width: 300px;
+
+  padding: 20px;
+
+  border: 3px solid purple;
+}
+
+/* ==================== COMPLETE BOX MODEL ==================== */
+
+.complete-box {
+  width: 300px;
+
+  /* Content → Padding */
+  padding: 25px;
+
+  /* Padding → Border */
+  border: 5px solid darkblue;
+
+  /* Border → Margin */
+  margin: 40px;
+
+  background-color: lightyellow;
+}
+
+/* ==================== WIDTH AND HEIGHT ==================== */
+
+.size-box {
+  width: 300px;
+
+  height: 150px;
+
+  padding: 20px;
+
+  border: 5px solid black;
+
+  background-color: lightblue;
+}
+
+/* ==================== CONTENT-BOX ==================== */
+
+.content-box {
+  box-sizing: content-box;
+
+  width: 300px;
+
+  padding: 20px;
+
+  border: 5px solid red;
+
+  background-color: #eeeeee;
+
+  margin-bottom: 30px;
+}
+
+/* ==================== BORDER-BOX ==================== */
+
+.border-box {
+  box-sizing: border-box;
+
+  width: 300px;
+
+  padding: 20px;
+
+  border: 5px solid green;
+
+  background-color: #eeeeee;
+}
+
+/* ==================== MARGIN SHORTHAND ==================== */
+
+/*
+    4 values:
+
+    margin: top right bottom left;
+*/
+
+.margin-shorthand {
+  width: 300px;
+
+  padding: 20px;
+
+  border: 3px solid black;
+
+  margin: 10px 20px 30px 40px;
+
+  background-color: lightblue;
+}
+
+/* ==================== PADDING SHORTHAND ==================== */
+
+/*
+    4 values:
+
+    padding: top right bottom left;
+*/
+
+.padding-shorthand {
+  width: 300px;
+
+  padding: 10px 20px 30px 40px;
+
+  border: 3px solid black;
+
+  background-color: lightgreen;
+}
+
+/* ==================== PRACTICAL CARD ==================== */
+
+.card {
+  width: 400px;
+
+  padding: 25px;
+
+  margin: 20px;
+
+  border: 2px solid #333333;
+
+  background-color: #f4f4f4;
+
+  /* Makes width include padding + border */
+  box-sizing: border-box;
+}
+
+.card h2 {
+  margin-top: 0;
+
+  color: darkblue;
+}
+
+.card button {
+  padding: 10px 20px;
+
+  border: none;
+
+  cursor: pointer;
+}

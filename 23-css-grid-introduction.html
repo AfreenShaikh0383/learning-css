@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>23 - CSS Grid Introduction</title>
+
+    <link rel="stylesheet" href="23-css-grid-introduction.css" />
+  </head>
+
+  <body>
+    <h1>23 - CSS Grid Introduction</h1>
+
+    <p>
+      CSS Grid is a layout system that allows us to arrange elements using rows
+      and columns.
+    </p>
+
+    <!-- ==================================================
+         BASIC GRID
+         ================================================== -->
+
+    <h2>1. Basic Grid</h2>
+
+    <div class="grid-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <!-- ==================================================
+         TWO COLUMN GRID
+         ================================================== -->
+
+    <h2>2. Two Column Grid</h2>
+
+    <div class="two-column-grid">
+      <div class="box">Item 1</div>
+      <div class="box">Item 2</div>
+      <div class="box">Item 3</div>
+      <div class="box">Item 4</div>
+    </div>
+
+    <!-- ==================================================
+         THREE COLUMN GRID
+         ================================================== -->
+
+    <h2>3. Three Column Grid</h2>
+
+    <div class="three-column-grid">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <!-- ==================================================
+         GRID GAP
+         ================================================== -->
+
+    <h2>4. Grid Gap</h2>
+
+    <div class="gap-grid">
+      <div class="box">HTML</div>
+      <div class="box">CSS</div>
+      <div class="box">JavaScript</div>
+      <div class="box">Python</div>
+    </div>
+
+    <!-- ==================================================
+         GRID PRACTICAL EXAMPLE
+         ================================================== -->
+
+    <h2>5. Practical Example - Dashboard</h2>
+
+    <div class="dashboard">
+      <div class="dashboard-card">
+        <h3>Users</h3>
+        <p>1,250</p>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Orders</h3>
+        <p>850</p>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Revenue</h3>
+        <p>₹75,000</p>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Products</h3>
+        <p>120</p>
+      </div>
+    </div>
+
+    <!-- ==================================================
+         GRID TERMINOLOGY
+         ================================================== -->
+
+    <h2>6. Grid Terminology</h2>
+
+    <ul>
+      <li>
+        <strong>Grid Container:</strong>
+        Parent element with <code>display: grid</code>.
+      </li>
+
+      <li>
+        <strong>Grid Item:</strong>
+        Direct child of the grid container.
+      </li>
+
+      <li>
+        <strong>Grid Row:</strong>
+        Horizontal track in the grid.
+      </li>
+
+      <li>
+        <strong>Grid Column:</strong>
+        Vertical track in the grid.
+      </li>
+
+      <li>
+        <strong>Gap:</strong>
+        Space between grid items.
+      </li>
+    </ul>
+
+    <!-- ==================================================
+         BASIC SYNTAX
+         ================================================== -->
+
+    <h2>7. Basic Grid Syntax</h2>
+
+    <pre>
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+    </pre>
+  </body>
+</html>

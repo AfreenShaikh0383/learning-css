@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>18 - Justify Content</title>
+
+    <link rel="stylesheet" href="18-justify-content.css" />
+  </head>
+
+  <body>
+    <h1>18 - Justify Content</h1>
+
+    <p>
+      The <code>justify-content</code> property controls the alignment and
+      distribution of flex items along the main axis.
+    </p>
+
+    <!-- ==================================================
+         FLEX START
+         ================================================== -->
+
+    <h2>1. justify-content: flex-start</h2>
+
+    <p>Items are placed at the beginning of the main axis.</p>
+
+    <div class="container flex-start">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         FLEX END
+         ================================================== -->
+
+    <h2>2. justify-content: flex-end</h2>
+
+    <p>Items are placed at the end of the main axis.</p>
+
+    <div class="container flex-end">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         CENTER
+         ================================================== -->
+
+    <h2>3. justify-content: center</h2>
+
+    <p>Items are placed in the center.</p>
+
+    <div class="container center">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         SPACE BETWEEN
+         ================================================== -->
+
+    <h2>4. justify-content: space-between</h2>
+
+    <p>Equal space is placed between the items.</p>
+
+    <div class="container space-between">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         SPACE AROUND
+         ================================================== -->
+
+    <h2>5. justify-content: space-around</h2>
+
+    <p>Space is placed around each item.</p>
+
+    <div class="container space-around">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         SPACE EVENLY
+         ================================================== -->
+
+    <h2>6. justify-content: space-evenly</h2>
+
+    <p>Equal space is placed between the items and the container edges.</p>
+
+    <div class="container space-evenly">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <!-- ==================================================
+         PRACTICAL NAVIGATION
+         ================================================== -->
+
+    <h2>7. Practical Example - Navigation</h2>
+
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- ==================================================
+         PRACTICAL BUTTON GROUP
+         ================================================== -->
+
+    <h2>8. Practical Example - Buttons</h2>
+
+    <div class="button-container">
+      <button>Cancel</button>
+      <button>Save</button>
+    </div>
+
+    <!-- ==================================================
+         SYNTAX
+         ================================================== -->
+
+    <h2>9. Syntax</h2>
+
+    <pre>
+.container {
+    display: flex;
+    justify-content: center;
+}
+    </pre>
+
+    <!-- ==================================================
+         VALUES
+         ================================================== -->
+
+    <h2>10. Common Values</h2>
+
+    <ul>
+      <li><code>flex-start</code></li>
+      <li><code>flex-end</code></li>
+      <li><code>center</code></li>
+      <li><code>space-between</code></li>
+      <li><code>space-around</code></li>
+      <li><code>space-evenly</code></li>
+    </ul>
+  </body>
+</html>

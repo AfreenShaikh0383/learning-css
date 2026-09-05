@@ -1,0 +1,193 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 30px;
+
+  line-height: 1.6;
+}
+
+/* ==================== FLOAT LEFT ==================== */
+
+.float-left {
+  float: left;
+
+  width: 150px;
+
+  height: 100px;
+
+  margin: 0 20px 10px 0;
+
+  padding: 20px;
+
+  background-color: lightblue;
+
+  border: 2px solid blue;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+/* ==================== FLOAT RIGHT ==================== */
+
+.float-right {
+  float: right;
+
+  width: 150px;
+
+  height: 100px;
+
+  margin: 0 0 10px 20px;
+
+  padding: 20px;
+
+  background-color: lightgreen;
+
+  border: 2px solid green;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+/* ==================== CLEAR ==================== */
+
+/*
+    clear: both
+    moves the element below
+    left and right floating elements.
+*/
+
+.clear {
+  clear: both;
+}
+
+/* ==================== TWO FLOATS ==================== */
+
+.box-left {
+  float: left;
+
+  width: 150px;
+
+  padding: 30px;
+
+  margin-right: 20px;
+
+  background-color: lightyellow;
+
+  border: 2px solid orange;
+
+  text-align: center;
+}
+
+.box-right {
+  float: right;
+
+  width: 150px;
+
+  padding: 30px;
+
+  margin-left: 20px;
+
+  background-color: lightpink;
+
+  border: 2px solid red;
+
+  text-align: center;
+}
+
+/* ==================== CLEAR LEFT ==================== */
+
+.small-left {
+  float: left;
+
+  width: 150px;
+
+  padding: 30px;
+
+  background-color: lightblue;
+
+  border: 2px solid blue;
+}
+
+.clear-left {
+  clear: left;
+
+  padding: 20px;
+
+  background-color: #eeeeee;
+}
+
+/* ==================== CLEAR BOTH ==================== */
+
+.left-box {
+  float: left;
+
+  width: 150px;
+
+  padding: 30px;
+
+  background-color: lightgreen;
+
+  border: 2px solid green;
+}
+
+.right-box {
+  float: right;
+
+  width: 150px;
+
+  padding: 30px;
+
+  background-color: lightyellow;
+
+  border: 2px solid orange;
+}
+
+.clear-both {
+  clear: both;
+
+  padding: 20px;
+
+  background-color: #eeeeee;
+}
+
+/* ==================== ARTICLE ==================== */
+
+.article {
+  max-width: 700px;
+
+  padding: 25px;
+
+  border: 2px solid #333333;
+
+  background-color: #f4f4f4;
+}
+
+/* ==================== ARTICLE IMAGE ==================== */
+
+.article-image {
+  float: left;
+
+  width: 180px;
+
+  height: 130px;
+
+  margin: 0 20px 10px 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background-color: lightblue;
+
+  border: 2px solid blue;
+}
+
+.article h2 {
+  color: darkblue;
+}

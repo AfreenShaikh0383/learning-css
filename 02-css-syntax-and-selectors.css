@@ -1,0 +1,106 @@
+/* ==================== UNIVERSAL SELECTOR ==================== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==================== ELEMENT SELECTOR ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+p {
+  color: #333333;
+}
+
+/* ==================== ID SELECTOR ==================== */
+
+#main-heading {
+  color: darkblue;
+}
+
+#special-text {
+  color: red;
+  font-weight: bold;
+}
+
+/* ==================== CLASS SELECTOR ==================== */
+
+.highlight {
+  background-color: yellow;
+  padding: 5px;
+}
+
+/* ==================== GROUP SELECTOR ==================== */
+
+h2,
+h3 {
+  color: darkgreen;
+}
+
+/* ==================== DESCENDANT SELECTOR ==================== */
+
+.container p {
+  color: purple;
+}
+
+/* ==================== CHILD SELECTOR ==================== */
+
+.parent > p {
+  color: orange;
+  font-weight: bold;
+}
+
+/* ==================== ATTRIBUTE SELECTOR ==================== */
+
+input[type="text"] {
+  border: 2px solid blue;
+  padding: 8px;
+}
+
+input[type="email"] {
+  border: 2px solid green;
+  padding: 8px;
+}
+
+/* ==================== MULTIPLE CLASSES ==================== */
+
+.text.large {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ==================== GROUP EXAMPLE ==================== */
+
+.group-example {
+  color: brown;
+}
+
+/* ==================== CODE ==================== */
+
+pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+/* ==================== STUDENT CARD ==================== */
+
+.student-card {
+  width: 350px;
+  padding: 20px;
+  border: 2px solid #333333;
+  background-color: #eeeeee;
+}
+
+.student-card h3 {
+  color: darkblue;
+}
+
+.student-card .name {
+  font-weight: bold;
+  color: purple;
+}

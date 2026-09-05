@@ -1,0 +1,117 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 30px;
+
+  line-height: 1.6;
+}
+
+/* ==================== VISIBLE ==================== */
+
+.visible {
+  visibility: visible;
+
+  padding: 20px;
+
+  background-color: lightgreen;
+
+  border: 2px solid green;
+}
+
+/* ==================== HIDDEN ==================== */
+
+.hidden {
+  visibility: hidden;
+
+  padding: 20px;
+
+  background-color: red;
+
+  border: 2px solid darkred;
+}
+
+/* ==================== NORMAL BOX ==================== */
+
+.box {
+  width: 250px;
+
+  padding: 20px;
+
+  margin: 10px 0;
+
+  background-color: lightblue;
+
+  border: 2px solid blue;
+}
+
+/* ==================== VISIBILITY HIDDEN ==================== */
+
+.comparison-box {
+  display: inline-block;
+
+  width: 150px;
+
+  padding: 20px;
+
+  margin: 5px;
+
+  background-color: lightblue;
+
+  border: 2px solid blue;
+}
+
+.visibility-hidden {
+  display: inline-block;
+
+  width: 150px;
+
+  padding: 20px;
+
+  margin: 5px;
+
+  visibility: hidden;
+
+  background-color: red;
+
+  border: 2px solid red;
+}
+
+/* ==================== DISPLAY NONE ==================== */
+
+.display-none {
+  display: none;
+
+  width: 150px;
+
+  padding: 20px;
+
+  margin: 5px;
+
+  background-color: red;
+
+  border: 2px solid red;
+}
+
+/* ==================== PRACTICAL CARD ==================== */
+
+.card {
+  width: 400px;
+
+  padding: 25px;
+
+  border: 2px solid #333333;
+
+  background-color: #f4f4f4;
+}
+
+.disabled-button {
+  padding: 10px 20px;
+
+  border: 1px solid gray;
+
+  background-color: #dddddd;
+
+  cursor: not-allowed;
+}

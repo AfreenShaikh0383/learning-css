@@ -1,0 +1,126 @@
+/* ==================== BASIC PAGE ==================== */
+
+body {
+  margin: 30px;
+
+  /* Font stack:
+       Browser tries Arial first.
+       If unavailable, it tries sans-serif. */
+  font-family: Arial, sans-serif;
+
+  line-height: 1.6;
+}
+
+/* ==================== FONT FAMILY ==================== */
+
+.arial {
+  font-family: Arial, sans-serif;
+}
+
+.courier {
+  font-family: "Courier New", monospace;
+}
+
+.georgia {
+  font-family: Georgia, serif;
+}
+
+/* ==================== FONT SIZE ==================== */
+
+.small-text {
+  font-size: 12px;
+}
+
+.medium-text {
+  font-size: 20px;
+}
+
+.large-text {
+  font-size: 32px;
+}
+
+/* ==================== FONT WEIGHT ==================== */
+
+.normal-weight {
+  font-weight: normal;
+}
+
+.bold-weight {
+  font-weight: bold;
+}
+
+/* ==================== FONT STYLE ==================== */
+
+.normal-style {
+  font-style: normal;
+}
+
+.italic-style {
+  font-style: italic;
+}
+
+/* ==================== FONT VARIANT ==================== */
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+/* ==================== FONT SHORTHAND ==================== */
+
+/*
+    font shorthand order:
+
+    font-style
+    font-variant
+    font-weight
+    font-size
+    font-family
+*/
+
+.font-shorthand {
+  font:
+    italic bold 22px Arial,
+    sans-serif;
+}
+
+/* ==================== PRACTICAL PROFILE ==================== */
+
+.profile {
+  width: 400px;
+
+  padding: 25px;
+
+  border: 2px solid #333333;
+
+  background-color: #f4f4f4;
+}
+
+.profile h2 {
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+
+  font-weight: bold;
+}
+
+.profile .role {
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  font-style: italic;
+
+  color: purple;
+}
+
+.profile button {
+  font-size: 16px;
+
+  font-weight: bold;
+
+  padding: 10px 20px;
+
+  cursor: pointer;
+}
