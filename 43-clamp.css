@@ -1,2 +1,24 @@
 /* clamp() */
-body{margin:0;font-family:Arial,sans-serif}main{width:90%;max-width:900px;margin:auto;padding:clamp(20px,5vw,60px) 0}h1{font-size:clamp(2rem,7vw,5rem)}.lead{font-size:clamp(1rem,2.5vw,1.5rem)}article{padding:clamp(20px,5vw,50px);border:2px solid #333}article h2{font-size:clamp(1.5rem,4vw,2.5rem)}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: clamp(20px, 5vw, 60px) 0;
+}
+h1 {
+  font-size: clamp(2rem, 7vw, 5rem);
+}
+.lead {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+article {
+  padding: clamp(20px, 5vw, 50px);
+  border: 2px solid #333;
+}
+article h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}

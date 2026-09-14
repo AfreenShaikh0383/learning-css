@@ -1,2 +1,26 @@
 /* Shadows and Gradients */
-body{margin:30px;font-family:Arial,sans-serif}.shadow{max-width:400px;padding:30px;margin-bottom:30px;border:1px solid #ccc;box-shadow:0 8px 20px #ccc}.linear,.radial{max-width:600px;padding:60px;margin-bottom:30px;color:white;text-align:center}.linear{background:linear-gradient(135deg,darkblue,purple)}.radial{background:radial-gradient(circle,purple,darkblue)}
+body {
+  margin: 30px;
+  font-family: Arial, sans-serif;
+}
+.shadow {
+  max-width: 400px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 20px #ccc;
+}
+.linear,
+.radial {
+  max-width: 600px;
+  padding: 60px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+.linear {
+  background: linear-gradient(135deg, darkblue, purple);
+}
+.radial {
+  background: radial-gradient(circle, purple, darkblue);
+}

@@ -1,2 +1,27 @@
 /* CSS Functions */
-*{box-sizing:border-box}body{margin:30px;font-family:Arial,sans-serif}.calc,.min,.max{padding:30px;margin-bottom:20px;border:2px solid #333}.calc{width:calc(100% - 40px);background:lightblue}.min{width:min(80%,500px);background:lightgreen}.max{width:max(300px,50%);background:lightyellow}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 30px;
+  font-family: Arial, sans-serif;
+}
+.calc,
+.min,
+.max {
+  padding: 30px;
+  margin-bottom: 20px;
+  border: 2px solid #333;
+}
+.calc {
+  width: calc(100% - 40px);
+  background: lightblue;
+}
+.min {
+  width: min(80%, 500px);
+  background: lightgreen;
+}
+.max {
+  width: max(300px, 50%);
+  background: lightyellow;
+}

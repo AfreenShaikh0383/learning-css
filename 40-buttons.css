@@ -1,2 +1,40 @@
 /* CSS Buttons */
-body{margin:30px;font-family:Arial,sans-serif}.buttons{display:flex;flex-wrap:wrap;gap:15px}.buttons button,article button{padding:10px 20px;font:inherit;cursor:pointer;border:2px solid #333}.primary{background:darkblue;color:white}.primary:hover{opacity:.85}.outline{background:white}.large{padding:15px 30px!important;font-size:1.2rem!important}article{max-width:450px;margin-top:40px;padding:30px;border:2px solid #333}article h2{color:darkblue}
+body {
+  margin: 30px;
+  font-family: Arial, sans-serif;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.buttons button,
+article button {
+  padding: 10px 20px;
+  font: inherit;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+.primary {
+  background: darkblue;
+  color: white;
+}
+.primary:hover {
+  opacity: 0.85;
+}
+.outline {
+  background: white;
+}
+.large {
+  padding: 15px 30px !important;
+  font-size: 1.2rem !important;
+}
+article {
+  max-width: 450px;
+  margin-top: 40px;
+  padding: 30px;
+  border: 2px solid #333;
+}
+article h2 {
+  color: darkblue;
+}

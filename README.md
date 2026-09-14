@@ -135,4 +135,3 @@ Each topic generally contains:
 ```text
 HTML file
 CSS file
-```
