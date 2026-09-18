@@ -3,68 +3,339 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Complete Responsive CSS Project</title>
+    <meta
+      name="description"
+      content="CodeNest Academy - a responsive HTML and CSS learning website."
+    />
+    <title>CodeNest Academy | Learn. Build. Repeat.</title>
     <link rel="stylesheet" href="50-complete-responsive-css-project.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="logo">CodeSpace</div>
-      <nav>
-        <a href="#">Home</a><a href="#">Courses</a><a href="#">Projects</a
-        ><a href="#">About</a>
-      </nav>
-      <button>Get Started</button>
+    <header class="site-header" id="home">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="CodeNest home"
+          >Code<span>Nest</span></a
+        >
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="menu-button" for="nav-toggle" aria-label="Open navigation"
+          >☰</label
+        >
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#courses">Courses</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#community">Community</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="#courses">View Courses</a>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <section class="hero">
-        <p>LEARN • BUILD • PRACTICE</p>
-        <h1>Build your web development skills.</h1>
-        <p>
-          Grid, Flexbox, media queries, variables, typography, transitions and
-          forms.
-        </p>
-        <div class="actions">
-          <button>Start Learning</button
-          ><button class="secondary">View Courses</button>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">LEARN WITHOUT THE BORING PART</p>
+            <h1>Build skills.<br /><span>Ship ideas.</span><br />Have fun.</h1>
+            <p class="hero-text">
+              A playful learning space for curious beginners who want to
+              understand web development, practice consistently, and create
+              projects they can show.
+            </p>
+            <div class="button-row">
+              <a class="button primary" href="#courses">Explore Courses ↗</a>
+              <a class="button secondary" href="#roadmap"
+                >See Learning Roadmap</a
+              >
+            </div>
+            <div class="mini-stats" aria-label="Academy highlights">
+              <div><strong>12+</strong><span>Learning tracks</span></div>
+              <div><strong>50</strong><span>Practice lessons</span></div>
+              <div><strong>100%</strong><span>Beginner friendly</span></div>
+            </div>
+          </div>
+          <div class="terminal-card" aria-label="Decorative coding terminal">
+            <div class="terminal-top">
+              <span></span><span></span><span></span><b>student@codenest:~</b>
+            </div>
+            <div class="terminal-body">
+              <p><span class="terminal-green">$</span> whoami</p>
+              <p class="terminal-output">A future builder</p>
+              <p><span class="terminal-green">$</span> goal --today</p>
+              <p class="terminal-output">Learn one thing. Build one thing.</p>
+              <p><span class="terminal-green">$</span> status</p>
+              <p class="terminal-output">
+                <span class="status-dot"></span> Curiosity: online
+              </p>
+              <p>
+                <span class="terminal-green">$</span>
+                <span class="cursor">_</span>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="courses">
-        <h2>Choose a course</h2>
-        <div class="course-grid">
-          <article>
-            <span>BEGINNER</span>
-            <h3>HTML</h3>
-            <p>Learn webpage structure.</p>
-            <a href="#">Explore Course →</a>
-          </article>
-          <article class="featured">
-            <span>POPULAR</span>
-            <h3>CSS</h3>
-            <p>Build responsive layouts.</p>
-            <a href="#">Explore Course →</a>
-          </article>
-          <article>
-            <span>NEXT STEP</span>
-            <h3>JavaScript</h3>
-            <p>Learn browser interaction.</p>
-            <a href="#">Explore Course →</a>
-          </article>
+
+      <section class="announcement section-small">
+        <div class="container announcement-inner">
+          <span class="pill">NEW</span>
+          <p>Responsive Web Design pathway is now available for practice.</p>
+          <a href="#courses">Start learning →</a>
         </div>
       </section>
-      <section class="contact">
-        <div>
-          <h2>Have a question?</h2>
-          <p>Send a message.</p>
+
+      <section class="section" id="courses">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">LEARNING LIBRARY</p>
+              <h2>Choose your next course.</h2>
+            </div>
+            <p>
+              Short lessons, practical examples, and projects designed to keep
+              you moving.
+            </p>
+          </div>
+          <div class="course-grid">
+            <article class="course-card featured-course">
+              <div class="course-icon">&lt;/&gt;</div>
+              <span class="level">BEGINNER</span>
+              <h3>HTML Foundations</h3>
+              <p>
+                Learn page structure, semantic elements, links, images, forms,
+                and accessible markup.
+              </p>
+              <div class="progress"><span style="width: 80%"></span></div>
+              <small>20 lessons · 4 projects</small>
+              <a class="text-link" href="#course-details"
+                >View course details →</a
+              >
+            </article>
+            <article class="course-card">
+              <div class="course-icon">#</div>
+              <span class="level">BEGINNER → INTERMEDIATE</span>
+              <h3>CSS Mastery</h3>
+              <p>
+                Practice selectors, box model, Flexbox, Grid, responsive
+                layouts, animations, and effects.
+              </p>
+              <div class="progress"><span style="width: 65%"></span></div>
+              <small>50 lessons · 5 projects</small>
+              <a class="text-link" href="#course-details"
+                >View course details →</a
+              >
+            </article>
+            <article class="course-card">
+              <div class="course-icon">JS</div>
+              <span class="level">COMING NEXT</span>
+              <h3>JavaScript Basics</h3>
+              <p>
+                Prepare for interactive websites with variables, conditions,
+                functions, arrays, and events.
+              </p>
+              <div class="progress"><span style="width: 20%"></span></div>
+              <small>Planned · Project based</small>
+              <a class="text-link" href="#roadmap">View roadmap →</a>
+            </article>
+          </div>
+          <div class="center-action">
+            <a class="button dark" href="#course-details"
+              >View All Course Information</a
+            >
+          </div>
         </div>
-        <form>
-          <input placeholder="Your name" /><input
-            type="email"
-            placeholder="Your email"
-          /><textarea rows="5" placeholder="Your message"></textarea
-          ><button>Send Message</button>
-        </form>
+      </section>
+
+      <section class="section muted-section" id="course-details">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">COURSE DETAILS</p>
+              <h2>What you will practice.</h2>
+            </div>
+            <p>
+              Use this section as your study dashboard. Tick off the skills you
+              have already practiced.
+            </p>
+          </div>
+          <div class="details-grid">
+            <article class="details-card">
+              <h3>HTML Foundations</h3>
+              <ul class="check-list">
+                <li>Document structure</li>
+                <li>Text, links, and images</li>
+                <li>Lists and tables</li>
+                <li>Forms and buttons</li>
+                <li>Semantic HTML</li>
+              </ul>
+              <a class="button small secondary" href="#contact"
+                >Request practice set</a
+              >
+            </article>
+            <article class="details-card">
+              <h3>CSS Mastery</h3>
+              <ul class="check-list">
+                <li>Selectors and specificity</li>
+                <li>Spacing and box model</li>
+                <li>Flexbox and Grid</li>
+                <li>Responsive design</li>
+                <li>Transitions and animations</li>
+              </ul>
+              <a class="button small secondary" href="#contact"
+                >Request practice set</a
+              >
+            </article>
+            <article class="details-card">
+              <h3>Project challenges</h3>
+              <ul class="check-list">
+                <li>Profile card</li>
+                <li>Responsive landing page</li>
+                <li>Course listing website</li>
+                <li>Product page</li>
+                <li>Complete responsive website</li>
+              </ul>
+              <a class="button small secondary" href="#contact"
+                >Get project ideas</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="container roadmap-grid">
+          <div>
+            <p class="eyebrow">YOUR ROADMAP</p>
+            <h2>Progress in small steps.</h2>
+            <p class="section-text">
+              Follow a simple path instead of trying to learn everything at
+              once. Each stage ends with something you can build.
+            </p>
+            <a class="button primary" href="#contact">Create My Study Plan</a>
+          </div>
+          <ol class="timeline">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Structure</h3>
+                <p>Understand HTML and create your first multi-page website.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Style</h3>
+                <p>
+                  Use CSS to control colors, spacing, layouts, and
+                  responsiveness.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Build</h3>
+                <p>
+                  Combine lessons into a complete website with reusable
+                  sections.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <h3>Improve</h3>
+                <p>Review, refactor, test on mobile, and publish your work.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section muted-section" id="community">
+        <div class="container community-grid">
+          <div>
+            <p class="eyebrow">THE COMMUNITY</p>
+            <h2>Made for people who debug with snacks.</h2>
+            <p class="section-text">
+              Learning is easier when you can share progress, compare
+              approaches, and laugh at the occasional missing semicolon.
+            </p>
+            <a class="button dark" href="#contact">Join the Study Circle</a>
+          </div>
+          <div class="quote-card">
+            <p class="quote">“It worked five minutes ago.”</p>
+            <p class="quote-author">— Every developer, eventually</p>
+            <div class="quote-tags">
+              <span>#keep-learning</span><span>#build-in-public</span
+              ><span>#debug-life</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-card">
+          <div>
+            <p class="eyebrow">READY WHEN YOU ARE</p>
+            <h2>Start your next practice session.</h2>
+            <p>
+              Enter your details below to create a sample learning reminder.
+              This HTML-only form is a visual practice example and does not send
+              data to a server.
+            </p>
+          </div>
+          <form class="signup-form" action="#success" method="get">
+            <label for="name">Your name</label
+            ><input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+            <label for="email">Email address</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+            <label for="interest">Main interest</label
+            ><select id="interest" name="interest">
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>Responsive design</option>
+              <option>Projects</option>
+            </select>
+            <label class="consent"
+              ><input type="checkbox" required /> I want to practice
+              consistently.</label
+            >
+            <button class="button primary" type="submit">
+              Create Reminder →
+            </button>
+          </form>
+        </div>
+        <div class="container" id="success">
+          <div class="success-note">
+            <strong>Practice reminder preview:</strong> Your form will return to
+            this page. No information is stored or sent.
+          </div>
+        </div>
       </section>
     </main>
-    <footer>© 2026 CodeSpace — CSS Final Project</footer>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home">Code<span>Nest</span></a>
+        <p>Learn. Build. Repeat.</p>
+        <div>
+          <a href="#home">Home</a><a href="#courses">Courses</a
+          ><a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
