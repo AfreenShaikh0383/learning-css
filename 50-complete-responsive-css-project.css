@@ -130,6 +130,7 @@ h3 {
   color: white;
   background: var(--ink);
   border-radius: 999px;
+  white-space: nowrap;
 }
 .nav-toggle,
 .menu-button {
